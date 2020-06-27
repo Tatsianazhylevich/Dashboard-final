@@ -8,6 +8,11 @@
     background: linear-gradient(0deg, #fd5272, #fb765a);
 }
 
+@mixin gadient-text {
+    background: linear-gradient(0deg, #fd5272, #fb765a);
+    mix-blend-mode: screen;
+}
+
 @mixin nav-text {
     position: absolute;
     top: 30px;

@@ -36,14 +36,17 @@ header .statistic-tab {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: white;
+  background: -webkit-gradient(linear, left bottom, left top, from(#fd5272), to(#fb765a));
+  background: linear-gradient(0deg, #fd5272, #fb765a);
 }
 
 .left-sidebar .left-sidebar__logo a {
-  padding: 0.7em;
+  padding: 0.6em 0.9em;
   font-family: 'Deftone Stylus', arial;
-  font-size: calc(25px + 0.2vw);
+  font-size: calc(25px + 0.4vw);
   text-decoration: none;
+  background: white;
+  mix-blend-mode: screen;
 }
 
 .left-sidebar .left-sidebar__nav {
@@ -74,21 +77,16 @@ header .statistic-tab {
   list-style-type: none;
 }
 
-.left-sidebar .left-sidebar__nav .nav__main .nav__logo {
+.left-sidebar .left-sidebar__nav .nav__main .nav__logo, .left-sidebar .left-sidebar__nav .nav__main .nav__link {
   width: calc(20px + 0.2vw);
   height: calc(19px + 0.1vw);
   margin: 20px;
+  cursor: pointer;
 }
 
 .left-sidebar .left-sidebar__nav .nav__main .nav__logo:nth-child(3) {
   width: calc(17px + 0.1vw);
   height: calc(20px + 0.2vw);
-}
-
-.left-sidebar .left-sidebar__nav .nav__main .nav__logo:nth-child(3) .nav__link {
-  width: 20px;
-  height: 20px;
-  cursor: pointer;
 }
 
 .left-sidebar .left-sidebar__nav .nav__main .nav__logo:last-child {

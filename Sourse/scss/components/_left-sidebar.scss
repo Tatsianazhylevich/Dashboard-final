@@ -14,12 +14,14 @@
     .left-sidebar__logo {
         display: flex;
         justify-content: center;
-        background-color: white;
+        @include orange-gradient;
         a {
-            padding: 0.7em;
+            padding: 0.6em 0.9em;
             font-family: 'Deftone Stylus', arial;
             font-size: $logo-text;
             text-decoration: none;
+            background: white;
+            mix-blend-mode: screen;
         }
     }
     
@@ -33,20 +35,15 @@
             flex-direction: column;
             padding: 0;
             list-style-type: none;
-            .nav__logo {
+            .nav__logo, .nav__link {
                 width: calc(20px + 0.2vw);
                 height: calc(19px + 0.1vw);
                 margin: 20px;
+                cursor: pointer;
             }
             .nav__logo:nth-child(3) {
                 width: calc(17px + 0.1vw);
                 height: calc(20px + 0.2vw);
-            
-                .nav__link {
-                    width: 20px;
-                    height: 20px;
-                    cursor: pointer;
-                }
             }
             .nav__logo:last-child {
                 width: calc(23px + 0.2vw);
@@ -107,6 +104,7 @@
             .power {
                 background: url(../img/power-button.png) no-repeat center/cover; 
             }
+
         }
     }
 }
