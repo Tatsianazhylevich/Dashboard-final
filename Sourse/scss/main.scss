@@ -1,0 +1,37 @@
+@import "./global/mixins";
+@import "./global/variables";
+@import "./components/header";
+@import "./components/left-sidebar";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1370px;
+    margin: 0 auto;
+}
+
+
+
+.wrapper {
+    background-color: #ececec;
+
+    main {
+        display: flex;
+        justify-content: space-between;
+        .main {
+            display: flex;
+            justify-content: flex-end;
+            width: 990px; 
+            height: 795px;
+            margin: 14px 14px 14px 92px;
+            background-color: #ececec;
+        }
+        .right-sidebar {
+            width: 271px;
+            height: 835px;
+            background-color: tomato;
+        }
+    }
+}

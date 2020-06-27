@@ -1,0 +1,112 @@
+@import "../global/variables";
+@import "../global/mixins";
+
+.left-sidebar {
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 78px;
+    height: 100vh;
+    @include orange-gradient;
+    
+    .left-sidebar__logo {
+        display: flex;
+        justify-content: center;
+        background-color: white;
+        a {
+            padding: 0.7em;
+            font-family: 'Deftone Stylus', arial;
+            font-size: $logo-text;
+            text-decoration: none;
+        }
+    }
+    
+    .left-sidebar__nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .nav__main {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding: 0;
+            list-style-type: none;
+            .nav__logo {
+                width: calc(20px + 0.2vw);
+                height: calc(19px + 0.1vw);
+                margin: 20px;
+            }
+            .nav__logo:nth-child(3) {
+                width: calc(17px + 0.1vw);
+                height: calc(20px + 0.2vw);
+            
+                .nav__link {
+                    width: 20px;
+                    height: 20px;
+                    cursor: pointer;
+                }
+            }
+            .nav__logo:last-child {
+                width: calc(23px + 0.2vw);
+                height: calc(24px + 0.1vw);
+                margin-top: 38vw;
+            }
+        
+            .home {
+                position: relative;
+                background: url(../img/home.png) no-repeat center/ cover;
+            }
+            .home::after {
+                content: 'Home';
+                left: -3px;
+                @include nav-text;
+            }
+
+            .stat {
+                position: relative;
+                background: url(../img/statistics.png) no-repeat center/ cover;
+            }
+            .stat::after {
+                content: 'Statistics';
+                left: -8px;
+                @include nav-text;
+            }
+
+            .users {
+                position: relative;
+                background: url(../img/users.png) no-repeat center/ cover;
+            }
+            .users::after {
+                content: 'Users';
+                left: -3px;
+                @include nav-text;
+            }
+
+            .set {
+                position: relative;
+                background: url(../img/settings.png) no-repeat center/ cover;
+            }
+            .set::after {
+                content: 'Settings';
+                left: -8px;
+                @include nav-text;
+            }
+
+            .quires {
+                position: relative;
+                background: url(../img/quires.png) no-repeat center/ cover;
+            }
+            .quires::after {
+                content: 'Quires';
+                left: -5px;
+                @include nav-text;
+            }
+
+            .power {
+                background: url(../img/power-button.png) no-repeat center/cover; 
+            }
+        }
+    }
+}
