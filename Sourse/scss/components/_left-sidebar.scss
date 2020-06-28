@@ -16,9 +16,10 @@
         justify-content: center;
         @include orange-gradient;
         a {
-            padding: 0.6em 0.9em;
+            padding: 0.4em 0.7em;
             font-family: 'Deftone Stylus', arial;
             font-size: $logo-text;
+            text-transform: uppercase;
             text-decoration: none;
             background: white;
             mix-blend-mode: screen;
@@ -36,7 +37,7 @@
             padding: 0;
             list-style-type: none;
             .nav__logo, .nav__link {
-                width: calc(20px + 0.2vw);
+                width: calc(18px + 0.2vw);
                 height: calc(19px + 0.1vw);
                 margin: 20px;
                 cursor: pointer;
@@ -46,9 +47,11 @@
                 height: calc(20px + 0.2vw);
             }
             .nav__logo:last-child {
-                width: calc(23px + 0.2vw);
-                height: calc(24px + 0.1vw);
-                margin-top: 38vw;
+                position: absolute;
+                bottom: 5px;
+                left: 5px;
+                width: calc(22px + 0.2vw);
+                height: calc(23px + 0.1vw);
             }
         
             .home {
@@ -102,7 +105,7 @@
             }
 
             .power {
-                background: url(../img/power-button.png) no-repeat center/cover; 
+                background: url(../img/power-button.png) no-repeat center/ cover; 
             }
 
         }
