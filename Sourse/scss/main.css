@@ -1,13 +1,72 @@
+header {
+  margin-left: 78px;
+}
+
 header .header {
   width: 100%;
   height: 71px;
   background-color: yellow;
 }
 
-header .statistic-tab {
-  width: 100%;
-  height: 71px;
-  background-color: palevioletred;
+header .statistic-tab .conteiner-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 1.4em;
+  background-color: white;
+  border-top: whitesmoke;
+}
+
+header .statistic-tab .conteiner-header .tab__daily .daily__text {
+  margin: 0;
+  padding: 0.5em;
+  font-weight: bold;
+  font-size: calc(12px + 0.1vw);
+  color: #777;
+}
+
+header .statistic-tab .conteiner-header .tab__daily .daily__number {
+  margin: 0 0 0.3em 0;
+  font-weight: bold;
+  font-size: calc(19px + 0.1vw);
+  color: #FD7858;
+}
+
+header .statistic-tab .conteiner-header .tab__daily .daily_stat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: calc(12px + 0.1vw);
+}
+
+header .statistic-tab .conteiner-header .tab__daily .daily_stat p {
+  margin: 0;
+  padding: 0.5em;
+  font-weight: bold;
+  font-size: calc(12px + 0.1vw);
+  color: #777;
+  padding: 0;
+}
+
+header .statistic-tab .conteiner-header .tab__daily .daily_stat .up {
+  color: #6c5bb6;
+}
+
+header .statistic-tab .conteiner-header .tab__daily .daily_stat .down {
+  color: #fd5272;
+}
+
+header .statistic-tab .conteiner-header .tab__daily .daily__add {
+  margin: 0 0 0.3em 0;
+  font-weight: bold;
+  font-size: calc(19px + 0.1vw);
+  color: #FD7858;
+  padding-top: 1.5em;
 }
 
 .left-sidebar {
@@ -189,6 +248,7 @@ body {
 
 .wrapper {
   background-color: #ececec;
+  font-family: 'Lato', sans-serif;
 }
 
 .wrapper main {

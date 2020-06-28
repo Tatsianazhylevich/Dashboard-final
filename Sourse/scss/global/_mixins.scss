@@ -20,3 +20,18 @@
     font-size: 10px;
     color: white;
 }
+
+@mixin daily-text {
+    margin: 0;
+    padding: 0.5em;
+    font-weight: bold;
+    font-size: calc(12px + 0.1vw);
+    color: $colortext; 
+}
+
+@mixin daily-number {
+    margin: 0 0 0.3em 0;
+    font-weight: bold;
+    font-size: calc(19px + 0.1vw);
+    color: #FD7858;
+}

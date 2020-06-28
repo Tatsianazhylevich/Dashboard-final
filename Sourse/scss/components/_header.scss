@@ -1,12 +1,53 @@
+@import "../global/variables";
+@import "../global/mixins";
+
 header {
+    margin-left: 78px;
     .header {
         width: 100%;
         height: 71px;
         background-color: yellow;
     }
+
+
+
+
     .statistic-tab {
-        width: 100%;
-        height: 71px;
-        background-color: palevioletred;
+        .conteiner-header{
+            display: flex;
+            justify-content: space-around;
+            padding: 1.4em;
+            background-color: white;
+            border-top: whitesmoke;
+            .tab__daily {
+                .daily__text {
+                    @include daily-text;
+                }
+                .daily__number {
+                    @include daily-number;
+                }
+                .daily_stat {
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: calc(12px + 0.1vw);
+                    p {
+                        @include daily-text;
+                        padding: 0;
+                    }
+                    .up {
+                        color: #6c5bb6;
+                    }
+                    .down {
+                        color: #fd5272;
+                    }
+                }
+    
+                .daily__add {
+                    @include daily-number
+                    padding-top: 1.5em;
+                }
+            }
+        
+        }
     }
 }
