@@ -58,10 +58,7 @@ header {
             }
             // =================FOLDERS=====================
             .settings__folders {
-                position: relative;
-                width: 20px;
-                height: 18px;
-                margin: 1.5em;
+                @include header-settings;
                 background: url(../img/folder-header.png) no-repeat center/ cover;
             }
             .settings__folders:after {
@@ -74,10 +71,7 @@ header {
             }
             // ===============SETTINGS========================
             .settings__settings {
-                position: relative;
-                width: 20px;
-                height: 18px;
-                margin: 1.5em;
+                @include header-settings;
                 background: url(../img/settings-header.png) no-repeat center/ cover;
             }
             .settings__settings:after {
@@ -128,6 +122,56 @@ header {
                     }
                 }
             }
+            .settings__upload {
+                @include header-settings;
+                background: url(../img/upload-header.png) no-repeat center/ cover;
+            }
+            .settings__upload:after {
+                content: "";
+                position: absolute;
+                width: 100%; 
+                height: 100%;
+                @include orange-gradient; 
+                mix-blend-mode: screen;
+            }
+
+            .settings__mail {
+                @include header-settings;
+                background: url(../img/envelope-header.png) no-repeat center/ 100%;
+            }
+            .settings__mail:after {
+                content: "";
+                position: absolute;
+                width: 100%; 
+                height: 100%;
+                @include orange-gradient; 
+                mix-blend-mode: screen;
+            }
+
+            .settings__earth {
+                @include header-settings;
+                background: url(../img/earth-header.png) no-repeat center/ cover;
+            }
+            .settings__earth:before {
+                content: "";
+                position: absolute;
+                top: -3px;
+                right: -6px;
+                width: 7px; 
+                height: 7px;
+                background-color: $gradient-pink;
+                border-radius: 50%;
+            }
+            .settings__earth:after {
+                content: "";
+                position: absolute;
+                width: 100%; 
+                height: 100%;
+                @include orange-gradient; 
+                mix-blend-mode: screen;
+            }
+
+            
             // ========================PROFILE=======================
             .header__profile {
                 display: flex;

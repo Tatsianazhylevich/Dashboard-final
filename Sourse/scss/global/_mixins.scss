@@ -35,15 +35,21 @@
     font-size: calc(19px + 0.1vw);
     color: #FD7858;
 }
+ @mixin header-settings {
+    position: relative;
+    width: 22px;
+    height: 20px;
+    margin: 1.5em;
+ }
 
 @mixin md {
     @media (min-width: #{$screen-md-min}) {
         @content;
     }
- }
+}
 
- @mixin sm {
+@mixin sm {
     @media (min-width: #{$screen-sm-min}) {
         @content;
     }
- }
+}
