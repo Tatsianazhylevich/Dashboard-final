@@ -35,3 +35,15 @@
     font-size: calc(19px + 0.1vw);
     color: #FD7858;
 }
+
+@mixin md {
+    @media (min-width: #{$screen-md-min}) {
+        @content;
+    }
+ }
+
+ @mixin sm {
+    @media (min-width: #{$screen-sm-min}) {
+        @content;
+    }
+ }
