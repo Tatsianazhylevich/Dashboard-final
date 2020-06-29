@@ -30,10 +30,12 @@ body {
             margin: 14px 14px 14px 92px;
             background-color: #ececec;
         }
-        .right-sidebar {
-            width: 271px;
-            height: 835px;
-            background-color: tomato;
-        }
+        
+    }
+    .right-sidebar {
+        display: block;
+        width: 271px;
+        height: 835px;
+        background-color: tomato;
     }
 }
