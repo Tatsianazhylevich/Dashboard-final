@@ -3,15 +3,189 @@
 
 header {
     margin-left: 78px;
+    // =============================HEADER======================
     .header {
         width: 100%;
-        height: 71px;
-        background-color: yellow;
+        background-color:white;
+        border-bottom: #f6f6f6 solid 1px;
+        .header__settings {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            //==================MORE=================================
+            .settings__more {
+                padding: 1.5em;
+                border-right: #e6e6e680 solid 1px;
+                .more__background {
+                    position: relative;
+                    width: 33px;
+                    height: 18px;
+                   @include orange-gradient;
+                    border-radius: 30%;
+                    .more__point {
+                        position: absolute;
+                        top: 7px;
+                        left: 13px;
+                        width: 5px;
+                        height: 5px;
+                        margin: 0;
+                        background: white;
+                        border-radius: 50%;
+                    }
+                    .more__point::before {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: -7px;
+                        width: 5px;
+                        height: 5px;
+                        margin: 0;
+                        background: white;
+                        border-radius: 50%;
+                    }
+                    .more__point::after {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 7px;
+                        width: 5px;
+                        height: 5px;
+                        margin: 0;
+                        background: white;
+                        border-radius: 50%;
+                    }
+                }
+            }
+            // =================FOLDERS=====================
+            .settings__folders {
+                position: relative;
+                width: 20px;
+                height: 18px;
+                margin: 1.5em;
+                background: url(../img/folder-header.png) no-repeat center/ cover;
+            }
+            .settings__folders:after {
+                content: "";
+                position: absolute;
+                width: 100%; 
+                height: 100%;
+                @include orange-gradient; 
+                mix-blend-mode: screen;
+            }
+            // ===============SETTINGS========================
+            .settings__settings {
+                position: relative;
+                width: 20px;
+                height: 18px;
+                margin: 1.5em;
+                background: url(../img/settings-header.png) no-repeat center/ cover;
+            }
+            .settings__settings:after {
+                position: absolute;
+                width: 100%; 
+                height: 100%;
+                content: "";
+                @include orange-gradient; 
+                mix-blend-mode: screen;
+            }
+
+            // =======================SEARCH======================
+            .settings__search {
+                margin: 0 auto;
+            .settings__search:after {
+                content:""; 
+                clear:both;
+            }
+                .search__form {
+                    position: relative;
+                    width: auto;
+                    margin: 0 auto;
+                    input, button {
+                        border-radius: 5%;
+                        border: 1px solid #cecece;   
+                    }
+                    input {
+                        width: calc(100px + 10vw);
+                        height: calc(25px + 1vw);
+                        padding-left: 15px;
+                        background: transparent; 
+                    }
+                    button {
+                        width: 42px;
+                        height: 42px;
+                        background: none;
+                        border: none;
+                        position: absolute;
+                        right: 4px;
+                        cursor: pointer;
+                    }
+                    button:before {
+                        content: "\1F50E";
+                        font-family: FontAwesome;
+                        color: #cecece;
+                        font-size: 1.5em;
+                        font-weight: 300;
+                    }
+                }
+            }
+            // ========================PROFILE=======================
+            .header__profile {
+                display: flex;
+                .profile__foto {
+                    width: 70px;
+                    height: 70px;
+                    margin: 0 1em;
+                    background: url(../img/foto_kendall.jpeg) no-repeat center/ cover;
+                }
+                .profile__data {
+                    .profile__name {
+                        margin-bottom: 0;
+                        font-size: 1em;
+                        color: #fd5272;
+                    }
+                    .profile__profession {
+                        margin: 4px 0;
+                        font-size: 10px;
+                        color: #BFBFBF;
+                    }
+                }
+                .profile__more {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 0 10px;
+                    .more__point {
+                        position: relative;
+                        width: 5px;
+                        height: 5px;
+                        background-color: #c2c2c2;
+                        border-radius: 50%;
+                    }
+                    .more__point:before {
+                        content: '';
+                        position: absolute;
+                        top: -8px;
+                        width: 5px;
+                        height: 5px;
+                        background-color: #c2c2c2;
+                        border-radius: 50%;
+                    }
+                    .more__point:after {
+                        content: '';
+                        position: absolute;
+                        top: 8px;
+                        width: 5px;
+                        height: 5px;
+                        background-color: #c2c2c2;
+                        border-radius: 50%;
+                    }
+                   
+                }
+            }
+        }
     }
 
-
-
-
+// ==========================STATISTIC-TAB===========================
     .statistic-tab {
         .conteiner-header{
             display: flex;
@@ -43,7 +217,7 @@ header {
                 }
     
                 .daily__add {
-                    @include daily-number
+                    @include daily-number;
                     padding-top: 1.5em;
                 }
             }
