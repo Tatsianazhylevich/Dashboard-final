@@ -148,17 +148,16 @@ header .header .header__settings .settings__search .search__form input, header .
 header .header .header__settings .settings__search .search__form input {
   width: calc(100px + 10vw);
   height: calc(25px + 1vw);
-  padding-left: 15px;
   background: transparent;
 }
 
 header .header .header__settings .settings__search .search__form button {
-  width: 42px;
-  height: 42px;
+  width: calc(25px + 1vw);
+  height: calc(25px + 1vw);
   background: none;
   border: none;
   position: absolute;
-  right: 4px;
+  right: 0.1vw;
   cursor: pointer;
 }
 
@@ -166,7 +165,7 @@ header .header .header__settings .settings__search .search__form button:before {
   content: "\1F50E";
   font-family: FontAwesome;
   color: #cecece;
-  font-size: 1.5em;
+  font-size: calc(10px + 1vw);
   font-weight: 300;
 }
 
@@ -245,6 +244,16 @@ header .statistic-tab .conteiner-header {
   padding: 1.4em;
   background-color: white;
   border-top: whitesmoke;
+}
+
+@media (min-width: 350px) {
+  header .statistic-tab .conteiner-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 header .statistic-tab .conteiner-header .tab__daily .daily__text {
