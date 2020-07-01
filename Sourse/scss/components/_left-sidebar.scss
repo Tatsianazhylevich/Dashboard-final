@@ -10,6 +10,7 @@
     width: 78px;
     height: 100vh;
     @include orange-gradient;
+    @include left-sidebar
     
     .left-sidebar__logo {
         display: flex;

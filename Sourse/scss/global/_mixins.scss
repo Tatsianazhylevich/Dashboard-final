@@ -42,6 +42,15 @@
     margin: 1.5em;
  }
 
+ @mixin title {
+     padding-top: 1vw;
+     margin: 0 0 1vw 0;
+     font-size: calc(10px + 0.3vw);
+     font-weight: bold;
+     text-transform: capitalize;
+     color: $colortitle;
+ }
+
 @mixin md {
     @media (min-width: #{$screen-md-min}) {
         @content;
@@ -51,5 +60,33 @@
 @mixin sm {
     @media (min-width: #{$screen-sm-min}) {
         @content;
+    }
+}
+
+@mixin mid {
+    @media screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100vw;
+    }
+    @media  (max-width : 590px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100vw;
+    }
+    @media  (max-width : 380px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100vw;
+    }
+
+}
+
+@mixin left-sidebar {
+    @media (max-width: 768px) {
+        display: none;  
     }
 }
