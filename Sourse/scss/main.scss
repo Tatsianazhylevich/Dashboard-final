@@ -3,6 +3,7 @@
 @import "./global/normalize";
 @import "./components/header";
 @import "./components/left-sidebar";
+@import "./components/inner";
 
 * {
     box-sizing: border-box;
@@ -32,7 +33,7 @@ body {
         }
         
     }
-    .right-sidebar {
+    .main__right-sidebar {
         display: block;
         width: 271px;
         height: 835px;
