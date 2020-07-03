@@ -33,23 +33,45 @@
     margin: 0 0 0.3em 0;
     font-weight: bold;
     font-size: calc(19px + 0.1vw);
-    color: #FD7858;
+    color: $gradient-pink;
 }
- @mixin header-settings {
+
+@mixin header-settings {
     position: relative;
     width: 22px;
     height: 20px;
     margin: 1.5em;
- }
+}
 
- @mixin title {
-     padding-top: 1vw;
-     margin: 0 0 1vw 0;
-     font-size: calc(10px + 0.3vw);
-     font-weight: bold;
-     text-transform: capitalize;
-     color: $colortitle;
- }
+@mixin title {
+    padding-top: 1vw;
+    margin: 0 0 1vw 0;
+    font-size: calc(10px + 0.3vw);
+    font-weight: bold;
+    text-transform: capitalize;
+    color: $colortitle;
+}
+
+@mixin container {
+    margin: 9px;
+    padding: 31px;
+    background-color: white;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+@mixin feed__time {
+    margin-top: 10px;
+    font-size: 8px;
+    color: #979796;
+    text-transform: capitalize;
+}
+
+@mixin feed__text {
+    font-size: calc(10px + 0.2vw);
+    text-align: left;
+    line-height: 1.2;
+    color: $colortext;
+}
 
 @mixin md {
     @media (min-width: #{$screen-md-min}) {
@@ -99,3 +121,12 @@
     }
 }
 
+
+
+// @mixin gradient-text ($size: 5px*4, $weight: 100*7, $angle: 45deg*6, $start: $gradient-pink, $end: $gradient-orange) {
+//     font-size: $size;
+//     font-weight: $weight;
+//     color: transparent;
+//     @include gradient($angle, $start, $end);
+//     -webkit-background-clip: text;
+// }
