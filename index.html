@@ -11,20 +11,40 @@
 <body>
     <div class="wrapper">
         <div class="left-sidebar">
-            <div class="left-sidebar__logo"><a href="#" class="logo--w">W</a></div>
+            <div class="left-sidebar__logo"><a href="#"><p>W</p></a></div>
             <div class="left-sidebar__nav">
-                <ul class="nav__main">
-                    <li class="nav__logo home"><a href="#" class="nav__link"></a></li>
-                    <li class="nav__logo stat"><a href="#" class="nav__link"></a></li>
-                    <li class="nav__logo users"><a href="#" class="nav__link"></a></li>
-                    <li class="nav__logo set"><a href="#" class="nav__link"></a></li>
-                    <li class="nav__logo quires"><a href="#" class="nav__link"></a></li>
-                    <li class="nav__logo power"><a href="#" class="nav__link"></a></li>
-                </ul>
+                <div class="nav__main">
+                    <a href="#" class="nav__link home">
+                        <img src="../sourse/img/home.png" alt="home">
+                        <p>Home</p>
+                    </a>
+                    <a href="#" class="nav__link stat">
+                        <img src="../sourse/img/statistics.png" alt="statistics">
+                        <p>Statistics</p>
+                    </a>
+                    <a href="#" class="nav__link users">
+                        <img src="../sourse/img/users.png" alt="users">
+                        <p>Users</p>
+                    </a>
+                    <a href="#" class="nav__link set">
+                        <img src="../sourse/img/settings.png" alt="settings">
+                        <p>Settings</p>
+                    </a>
+                    <a href="#" class="nav__link quires">
+                        <img src="../sourse/img/quires.png" alt="quires">
+                        <p>Quires</p>
+                    </a>
+                    <a href="#" class="nav__link power">
+                        <img src="../sourse/img/power-button.png" alt="power">
+                    </a>
+                </div>
             </div>
         </div>
-        <header>
-            <div class="header">
+        <div class="container__inner">
+            <header class="header">
+               <div class="gamburger_menu"></div>
+                    
+               <div class="header__nav">
                 <div class="header__settings">
                     <div class="settings__more">
                         <div class="more__background">
@@ -37,7 +57,7 @@
                         <form class="search__form">
                             <input type="text" placeholder="Search Anything Here...">
                             <button type="submit"></button>
-                          </form>
+                            </form>
                     </div>
                     <div class="settings__upload"></div>
                     <div class="settings__mail"></div>
@@ -52,133 +72,133 @@
                             <div class="more__point"></div>
                         </div>
                     </div>
-    
                 </div>
                 <div class="header__profile"></div>
-            </div>
-            <div class="statistic-tab">
-                <div class="conteiner-header">
-                    <div class="tab__daily">
-                        <p class="daily__text">Daily Visitors</p>
-                        <h3 class="daily__number">150,0000</h3>
-                        <div class="daily_stat">
-                            <span class="up">&#9650;</span>
-                            <p>1020</p>
-                            <span class="down">&#9660;</span>
-                            <p>1020</p> 
-                        </div>
-                    </div>
-                    <div class="tab__daily">
-                        <p class="daily__text">Daily Visitors</p>
-                        <h3 class="daily__number">150,0000</h3>
-                        <div class="daily_stat">
-                            <span class="up">&#9650;</span>
-                            <p>1020</p>
-                            <span class="down">&#9660;</span>
-                            <p>1020</p> 
-                        </div>
-                    </div>
-                    <div class="tab__daily">
-                        <p class="daily__text">Daily Visitors</p>
-                        <h3 class="daily__number">150,0000</h3>
-                        <div class="daily_stat">
-                            <span class="up">&#9650;</span>
-                            <p>1020</p>
-                            <span class="down">&#9660;</span>
-                            <p>1020</p> 
-                        </div>
-                    </div>
-                    <div class="tab__daily">
-                        <p class="daily__text">Daily Visitors</p>
-                        <h3 class="daily__number">150,0000</h3>
-                        <div class="daily_stat">
-                            <span class="up">&#9650;</span>
-                            <p>1020</p>
-                            <span class="down">&#9660;</span>
-                            <p>1020</p>
-                        </div> 
-                    </div>
-                    <div class="tab__daily">
-                        <p class="daily__text">Daily Visitors</p>
-                        <h3 class="daily__number">150,0000</h3>
-                        <div class="daily_stat">
-                            <span class="up">&#9650;</span>
-                            <p>1020</p>
-                            <span class="down">&#9660;</span>
-                            <p>1020</p>
-                        </div> 
-                    </div>
-                    <div class="tab__daily">
-                        <p class="daily__text">Daily Visitors</p>
-                        <h3 class="daily__number">150,0000</h3>
-                        <div class="daily_stat">
-                            <span class="up">&#9650;</span>
-                            <p>1020</p>
-                            <span class="down">&#9660;</span>
-                            <p>1020</p>
-                        </div>
-                    </div>
-                    <div class="tab__daily">
-                        <p class="daily__text">Daily Visitors</p>
-                        <h3 class="daily__number">150,0000</h3>
-                        <div class="daily_stat">
-                            <span class="up">&#9650;</span>
-                            <p>1020</p>
-                            <span class="down">&#9660;</span>
-                            <p>1020</p>
-                        </div> 
-                    </div>
-                    <div class="tab__daily">
-                        <h3 class="daily__add">+ Add statistic</h3>
-                    </div>
-                </div>
-            </div>
-        </header>
-        
-        <main class="main">
-            <div class="main__inner">
-                <div class="main__container">
-                    <div class="main__box box--progress">
-                        <div class="box">
-                            <div class="box__header">
-                                <h4 class="box__title">Monthly  revenue progress</h4>
-                                <ul class="box__list">
-                                    <li class="box__item">Month</li>
-                                    <li class="box__item">Day</li>
-                                    <li class="box__item">Year</li>
-                                </ul>
+               </div>             
+
+                <div class="statistic-tab">
+                    <div class="conteiner-header">
+                        <div class="tab__daily">
+                            <p class="daily__text">Daily Visitors</p>
+                            <h3 class="daily__number">150,0000</h3>
+                            <div class="daily_stat">
+                                <span class="up">&#9650;</span>
+                                <p>1020</p>
+                                <span class="down">&#9660;</span>
+                                <p>1020</p> 
                             </div>
-                            <div class="box__graph"></div>
                         </div>
-                    </div>
-                    <div class="main__box box--circle">
-                        <div class="box">
-                            <h4 class="box__title">Revenue per hour</h4>
+                        <div class="tab__daily">
+                            <p class="daily__text">Daily Visitors</p>
+                            <h3 class="daily__number">120,0000</h3>
+                            <div class="daily_stat">
+                                <span class="up">&#9650;</span>
+                                <p>1020</p>
+                                <span class="down">&#9660;</span>
+                                <p>1020</p> 
+                            </div>
+                        </div>
+                        <div class="tab__daily">
+                            <p class="daily__text">Daily Visitors</p>
+                            <h3 class="daily__number">900,000</h3>
+                            <div class="daily_stat">
+                                <span class="up">&#9650;</span>
+                                <p>1020</p>
+                                <span class="down">&#9660;</span>
+                                <p>1020</p> 
+                            </div>
+                        </div>
+                        <div class="tab__daily">
+                            <p class="daily__text">Daily Visitors</p>
+                            <h3 class="daily__number">850,000</h3>
+                            <div class="daily_stat">
+                                <span class="up">&#9650;</span>
+                                <p>1020</p>
+                                <span class="down">&#9660;</span>
+                                <p>1020</p>
+                            </div> 
+                        </div>
+                        <div class="tab__daily">
+                            <p class="daily__text">Daily Visitors</p>
+                            <h3 class="daily__number">750,000</h3>
+                            <div class="daily_stat">
+                                <span class="up">&#9650;</span>
+                                <p>1020</p>
+                                <span class="down">&#9660;</span>
+                                <p>1020</p>
+                            </div> 
+                        </div>
+                        <div class="tab__daily">
+                            <p class="daily__text">Daily Visitors</p>
+                            <h3 class="daily__number">$985,0000</h3>
+                            <div class="daily_stat">
+                                <span class="up">&#9650;</span>
+                                <p>1020</p>
+                                <span class="down">&#9660;</span>
+                                <p>1020</p>
+                            </div>
+                        </div>
+                        <div class="tab__daily">
+                            <p class="daily__text">Daily Visitors</p>
+                            <h3 class="daily__number">150,0000</h3>
+                            <div class="daily_stat">
+                                <span class="up">&#9650;</span>
+                                <p>1020</p>
+                                <span class="down">&#9660;</span>
+                                <p>1020</p>
+                            </div> 
+                        </div>
+                        <div class="tab__daily">
+                            <h3 class="daily__add">+ Add statistic</h3>
                         </div>
                     </div>
                 </div>
-                <div class="main__container">
-                    <div class="main__box box--feed">
-                        <div class="box">
-                            <h4 class="box__title">Customers feed</h4>
-                        </div>
-                 </div>
-                    <div class="main__box box--holder">
-                        <div class="box ">
-                            <div class="holder__big">
+            </header>    
+            
+            <main class="main">
+                <div class="main__inner">
+                    <div class="main__container">
+                        <div class="main__box box--progress">
+                            <div class="box">
+                                <div class="box__header">
+                                    <h4 class="box__title">Monthly  revenue progress</h4>
+                                    <ul class="box__list">
+                                        <li class="box__item">Month</li>
+                                        <li class="box__item">Day</li>
+                                        <li class="box__item">Year</li>
+                                    </ul>
+                                </div>
+                                <div class="box__graph"></div>
                             </div>
-                            <div class="holder__small">
-                                <div class="Holder__small--progress"></div>
-                                <div class="holder__small--shipments"></div>
+                        </div>
+                        <div class="main__box box--circle">
+                            <div class="box">
+                                <h4 class="box__title">Revenue per hour</h4>
                             </div>
                         </div>
                     </div>
-                </div>    
-            </div>
-        <div class="main__right-sidebar"></div>
-        </main>
+                    <div class="main__container">
+                        <div class="main__box box--feed">
+                            <div class="box">
+                                <h4 class="box__title">Customers feed</h4>
+                            </div>
+                     </div>
+                        <div class="main__box box--holder">
+                            <div class="box ">
+                                <div class="holder__big">
+                                </div>
+                                <div class="holder__small">
+                                    <div class="Holder__small--progress"></div>
+                                    <div class="holder__small--shipments"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+                <div class="main__right-sidebar"></div>
+            </main>
+        </div>
         
-        <footer></footer>
     </div>
 </body>
 </html>

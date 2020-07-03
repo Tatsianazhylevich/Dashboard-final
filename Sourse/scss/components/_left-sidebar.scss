@@ -2,21 +2,18 @@
 @import "../global/mixins";
 
 .left-sidebar {
-    position: fixed;
-    z-index: 100;
     display: flex;
-    justify-content: flex-start;
     flex-direction: column;
-    width: 78px;
-    height: 100vh;
+    width: 70px;
     @include orange-gradient;
-    @include left-sidebar
+    @include left-sidebar;
     
     .left-sidebar__logo {
         display: flex;
+        flex-grow: 1;
         justify-content: center;
         @include orange-gradient;
-        a {
+        p {
             padding: 0.4em 0.7em;
             font-family: 'Deftone Stylus', arial;
             font-size: $logo-text;
@@ -25,89 +22,51 @@
             background: white;
             mix-blend-mode: screen;
         }
+        &:hover {
+            transform: scale(1.1);
+            cursor: pointer;
+        }
     }
-    
     .left-sidebar__nav {
         display: flex;
         flex-direction: column;
+        flex-grow: 1000;
         align-items: center;
         .nav__main {
             display: flex;
             align-items: center;
             flex-direction: column;
+            flex:auto;
             padding: 0;
-            list-style-type: none;
-            .nav__logo, .nav__link {
-                width: calc(18px + 0.2vw);
-                height: calc(19px + 0.1vw);
-                margin: 20px;
+            .nav__link {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 40px;
+                height: 40px;
+                margin: 10px;
                 cursor: pointer;
             }
-            .nav__logo:nth-child(3) {
-                width: calc(17px + 0.1vw);
-                height: calc(20px + 0.2vw);
-            }
-            .nav__logo:last-child {
+            .nav__link:hover::after {
+                content: ''; 
                 position: absolute;
                 bottom: 5px;
-                left: 5px;
-                width: calc(22px + 0.2vw);
-                height: calc(23px + 0.1vw);
+                left: 50px;
+                border: 10px solid transparent; 
+                border-left: 10px solid #EA6D54; 
             }
-        
-            .home {
-                position: relative;
-                background: url(../img/home.png) no-repeat center/ cover;
-            }
-            .home::after {
-                content: 'Home';
-                left: -3px;
-                @include nav-text;
-            }
-
-            .stat {
-                position: relative;
-                background: url(../img/statistics.png) no-repeat center/ cover;
-            }
-            .stat::after {
-                content: 'Statistics';
-                left: -8px;
-                @include nav-text;
-            }
-
-            .users {
-                position: relative;
-                background: url(../img/users.png) no-repeat center/ cover;
-            }
-            .users::after {
-                content: 'Users';
-                left: -3px;
-                @include nav-text;
-            }
-
-            .set {
-                position: relative;
-                background: url(../img/settings.png) no-repeat center/ cover;
-            }
-            .set::after {
-                content: 'Settings';
-                left: -8px;
-                @include nav-text;
-            }
-
-            .quires {
-                position: relative;
-                background: url(../img/quires.png) no-repeat center/ cover;
-            }
-            .quires::after {
-                content: 'Quires';
-                left: -5px;
-                @include nav-text;
+           
+            p {
+                margin: 5px;
+                @include nav-text; 
             }
 
             .power {
-                background: url(../img/power-button.png) no-repeat center/ cover; 
+                margin-top: auto;
+                margin-bottom: 20px;
             }
+
 
         }
     }

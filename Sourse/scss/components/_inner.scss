@@ -1,16 +1,13 @@
 .main__inner {
-    display: block;
-    width: 72%;
-    margin-left: 78px;
     .main__container {
         display: flex;
         justify-content: space-around;
         @include mid;
         .main__box {
-            width: 51%;
             margin: 9px;
             background-color: white;
             box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
             .box {
                 max-width: 90%;
                 margin: 0 auto;
