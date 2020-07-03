@@ -1,39 +1,229 @@
 .main__inner {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    margin: 14px;
+    background-color: #ececec;
     .main__container {
         display: flex;
         justify-content: space-around;
-        @include mid;
-        .main__box {
-            margin: 9px;
-            background-color: white;
-            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-
-            .box {
-                max-width: 90%;
-                margin: 0 auto;
-                
-                .box__header {
+        .container__progress {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 2;
+            width: 100px;
+            @include container; 
+            .box__header {
+                display: flex;
+                justify-content: space-between;
+                .h4 {
+                @include title;
+                }
+                .box__list {
                     display: flex;
-                    justify-content: space-between;
-                    .box__title {
-                        @include title;
-                    }
-                    .box__list {
-                        display: flex;
-                        list-style-type: none;
-                        .box__item {
+                    list-style-type: none;
+                    .box__item {
+                        padding: 10px;
+                         font-size: calc(10px + 0.2vw);
+                        font-weight: bold;
+                        color: #bfbfbf;
+                        .box__item:hover {
+                            padding: 10px;
                             font-size: calc(10px + 0.2vw);
                             font-weight: bold;
-                            color: #bfbfbf;
+                            color: #bfbfbf; 
+                            @include orange-gradient;
+
                         }
                     }
                 }
-                .box__graph {
-                    width: 100%;
-                    height: 120px;
-                    background: url(../img/graph.png) no-repeat center/ 100%;
+            }
+            .box__graph {
+                width: 100%;
+                height: 140px;
+                background: url(../img/graph.png) no-repeat center/ cover;
+            } 
+        }
+
+        .container__circle {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+            width: 100px;
+            @include container;
+            .h4 {
+                @include title;
+            }
+            .box__img {
+                position: relative;
+                width: 200px;
+                height: 200px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                background: white;
+                .percent {
+                    position: relative;
+                    width: 150px;
+                    height: 150px;
+                    svg {
+                        position: relative;
+                        width: 150px;
+                        height: 150px;
+                        circle {
+                            width: 100%;
+                            height: 100%;
+                            fill: none;
+                            stroke-width: 10;
+                            stroke: #000;
+                            transform: translate(5px,5px);
+                            stroke-dasharray: 440;
+                            stroke-dashoffset: 440;
+                            stroke-linecap: round;
+                        }
+                        circle:nth-child(1) {
+                            stroke-dasharray: 0;
+                            stroke-dashoffset: 0;
+                            stroke: #e2dfdf;
+                        }
+                        circle:nth-child(2) {
+                            stroke-dashoffset: -50;
+                            stroke: #8646b3;
+                        }
+                    }
+                    .number {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: #8646b3;
+                        h2 {
+                            font-size: 30px;
+                            font-weight: bold;
+
+                        }
+                    }
+                }
+            }
+            .box__stat {
+                display: flex;
+                justify-content: space-between;
+                font-size: 14px;
+                p {
+                    @include daily-text;
+                    padding: 0;
+                }
+                .up {
+                    color: #6c5bb6;
+                }
+                .down {
+                    color: #fd5272;
+                }
+            }
+
+        }
+
+        .container__feed {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            width: 100px;
+            @include container;
+            .feed__inner {
+                display: flex;
+                margin-top: 35px;
+                .feed__autor {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;            
+                    .woman {
+                        width: 43px;
+                        height: 43px;
+                        margin: 20px;                       
+                        p {
+                            @include feed__time;
+                        }
+                    }
+                    .man {
+                        width: 43px;
+                        height: 43px;
+                        margin: 20px;
+                        p {
+                            @include feed__time;
+                        }
+                    }
+                }
+                .feed__feed {
+                    display: flex;
+                    flex-direction: column;
+                    .feed__text {
+                        margin: 5px;
+                        padding: 20px;
+                        border: #f1f1f1 1px solid;
+                        .text {
+                            @include feed__text;
+                        }
+                    }
+                    .feed__subtext {
+                        display: flex;
+                        justify-content: space-around;
+                        .side-line {
+                            width: 4px;
+                            margin-right: 15px;
+                            background-color: #f1f1f1;
+                            border: 0.5px solid #f1f1f1;
+                        }
+                        .inside_text {
+                            
+                            .subtext {
+                                margin: 5px;
+                                padding: 20px;
+                                border: #f1f1f1 1px solid;
+                                .text__sophie {
+                                    @include feed__text;
+                                }
+                            }
+                        }
+                    }
+
                 }
             }
         }
+        .container__holder {
+            display: flex;
+            flex-wrap: wrap;
+            flex-grow: 1;
+            width: 100px;
+            @include container;
+            .holder__task {
+                display: flex;
+                flex-direction: column;
+                flex-grow: 100;
+                width: 100px;
+                @include container;
+                
+            }
+            .holder__progress {
+                display: flex;
+                flex-direction: column;
+                flex-grow: 1;
+                width: 100px;
+                @include container;
+            }
+            .holder__shipments {
+                display: flex;
+                flex-direction: column;
+                flex-grow: 1;
+                width: 100px;
+                @include container;
+            }
+        }
     }
-}
+}   
