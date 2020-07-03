@@ -158,39 +158,88 @@
             <main class="main">
                 <div class="main__inner">
                     <div class="main__container">
-                        <div class="main__box box--progress">
-                            <div class="box">
-                                <div class="box__header">
-                                    <h4 class="box__title">Monthly  revenue progress</h4>
-                                    <ul class="box__list">
-                                        <li class="box__item">Month</li>
-                                        <li class="box__item">Day</li>
-                                        <li class="box__item">Year</li>
-                                    </ul>
-                                </div>
-                                <div class="box__graph"></div>
+                        <div class="container__progress">
+                            <div class="box__header">
+                                <h4 class="box__title">Monthly  revenue progress</h4>
+                                <ul class="box__list">
+                                    <li class="box__item">Month</li>
+                                    <li class="box__item">Day</li>
+                                    <li class="box__item">Year</li>
+                                </ul>
                             </div>
+                            <div class="box__graph"></div>
                         </div>
-                        <div class="main__box box--circle">
-                            <div class="box">
-                                <h4 class="box__title">Revenue per hour</h4>
+                        <div class="container__circle">
+                            <h4 class="box__title">Revenue per hour</h4>
+                            <div class="box__img">
+                                <div class="percent">
+                                    <svg>
+                                        <circle cx='70' cy='70' r='70'></circle>
+                                        <circle cx='70' cy='70' r='70'></circle>
+                                    </svg>
+                                    <div class="number">
+                                        <h2>$150</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box__stat">
+                                <span class="up">&#9650;</span>
+                                <p>1020</p>
+                                <span class="down">&#9660;</span>
+                                <p>1020</p> 
                             </div>
                         </div>
                     </div>
                     <div class="main__container">
-                        <div class="main__box box--feed">
-                            <div class="box">
-                                <h4 class="box__title">Customers feed</h4>
+                        <div class="container__feed">
+                            <h4 class="container__title">Customers feed</h4>
+                            <div class="feed__inner">
+                                <div class="feed__autor">
+                                    <div class="woman">
+                                        <img src="../sourse/img/sofi.png" alt="sophi">
+                                        <p>10 min ago</p>
+                                    </div>
+                                    <div class="man"> 
+                                        <img src="../sourse/img/peter.png" alt="peter">           
+                                        <p>15 min ago</p>        
+                                    </div>
+                                </div>
+                                <div class="feed__feed">
+                                    <div class="feed__text">
+                                        <p class="text"><b>Sophie Turner</b> is simply dummy text of the printing and 
+                                            typesetting industry. Lorem Ipsum has been the industry's standard dummy 
+                                            text ever since the 1500s, when an unknown printer took a galley of type 
+                                            and scrambled it to make a type</p>
+                                    </div>
+                                    <div class="feed__subtext">
+                                        <div class="side-line"></div>
+                                        <div class="inside_text">
+                                            <div class="subtext"> <p class="text__sophie"><b>Sophie Turner</b> is simply dummy text of the printing and 
+                                                typesetting industry. Lorem Ipsum has been the industry's standard dummy 
+                                                text ever since the 1500s.</p></div>
+                                            <div class="subtext"> <p class="text__sophie"><b>Sophie Turner</b> is simply dummy text of the printing and 
+                                                typesetting industry. Lorem Ipsum has been the industry's standard dummy 
+                                                text ever since the 1500s.</p></div>
+                                        </div>
+                                    </div>
+                                    <div class="feed__text">
+                                        <p class="text"><b>Peter Quill</b> is simply dummy text of the printing and 
+                                            typesetting industry. Lorem Ipsum has been the industry's standard dummy 
+                                            text ever since the 1500s, when an unknown printer took a galley of type 
+                                            and scrambled it to make a type</p>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div>
+                        <div class="container__holder">
+                             <div class="holder__task">
+                                <h4 class="container__title">Todays task</h4>
                             </div>
-                     </div>
-                        <div class="main__box box--holder">
-                            <div class="box ">
-                                <div class="holder__big">
-                                </div>
-                                <div class="holder__small">
-                                    <div class="Holder__small--progress"></div>
-                                    <div class="holder__small--shipments"></div>
-                                </div>
+                            <div class="holder__progress">
+                                <h4 class="container__title">Progress</h4>
+                            </div>
+                            <div class="holder__shipments">
+                                <h4 class="container__title">Shipments</h4>
                             </div>
                         </div>
                     </div>    
