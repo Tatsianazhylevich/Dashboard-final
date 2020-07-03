@@ -201,26 +201,59 @@
             flex-wrap: wrap;
             flex-grow: 1;
             width: 100px;
-            @include container;
             .holder__task {
                 display: flex;
                 flex-direction: column;
-                flex-grow: 100;
+                flex-basis: 500px;
                 width: 100px;
                 @include container;
-                
+
             }
             .holder__progress {
                 display: flex;
                 flex-direction: column;
-                flex-grow: 1;
+                justify-content: space-around;
+                align-items: center;
+                flex-basis: 240px;
                 width: 100px;
                 @include container;
+                .h4 {
+                    @include title;
+                }
+                .progress__img {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .progress__number {
+                    display: flex;
+                    justify-content: center;
+                    margin: 0 0 0.3em 0;
+                    font-weight: bold;
+                    font-size: calc(19px + 0.1vw);
+                    color: $gradient-violet;
+                }
+                .box__stat {
+                    display: flex;
+                    justify-content: center;
+                    font-size: 14px;
+                    p {
+                        @include daily-text;
+                        padding: 0;
+                    }
+                    .up {
+                        color: #6c5bb6;
+                    }
+                    .down {
+                        color: #fd5272;
+                    }
+                }
+                
             }
             .holder__shipments {
                 display: flex;
                 flex-direction: column;
-                flex-grow: 1;
+                flex-basis: 240px;
                 width: 100px;
                 @include container;
             }
