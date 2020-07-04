@@ -1,0 +1,83 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 1 0 auto;
+    .footer__icons {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 30px;
+        .icons__rdio {
+            @include rdio;
+            .rdio {
+                position: absolute;
+                top: 13px;
+                right: 10px;
+                width: 31px;
+                height: 25px;
+                background: url(../img/footer/rdio-logo.png) no-repeat center/ 100%;
+            }
+        }
+        .icons__css {
+            @include css;
+            .css {
+                position: absolute;
+                top: 13px;
+                right: 10px;
+                width: 31px;
+                height: 25px;
+                background: url(../img/footer/css-3-logo.png) no-repeat center/ 100%;
+            }
+        }
+        .icons__deviantart {
+            @include deviantart;
+            .deviantart {
+                position: absolute;
+                top: 13px;
+                right: 18px;
+                width: 20px;
+                height: 30px;
+                background: url(../img/footer/deviantart-logo.png) no-repeat center/ 90%;
+            }
+        }
+        .icons__xing {
+            @include xing;
+            .xing {
+                position: absolute;
+                top: 13px;
+                right: 10px;
+                width: 31px;
+                height: 25px;
+                background: url(../img/footer/xing-logo.png) no-repeat center/ 100%;
+            }
+        }
+        .icons__vimeo {
+            @include vimeo;
+            .vimeo {
+                position: absolute;
+                top: 15px;
+                right: 13px;
+                width: 31px;
+                height: 25px;
+                background: url(../img/footer/vimeo-logo.png) no-repeat center/ 100%;
+            }
+        }
+        .icons__vk {
+            @include vk;
+            .vk {
+                position: absolute;
+                top: 15px;
+                right: 10px;
+                width: 35px;
+                height: 25px;
+                background: url(../img/footer/vk-logo.png) no-repeat center/ 100%;
+            }
+        }
+
+
+        
+        
+    }
+}
