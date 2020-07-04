@@ -256,7 +256,7 @@ header .header__nav .header__settings .settings__folders {
   width: 22px;
   height: 20px;
   margin: 1.5em;
-  background: url(../img/folder-header.png) no-repeat center/cover;
+  background: url(../img/header/folder-header.png) no-repeat center/cover;
 }
 
 header .header__nav .header__settings .settings__folders:after {
@@ -274,7 +274,7 @@ header .header__nav .header__settings .settings__settings {
   width: 22px;
   height: 20px;
   margin: 1.5em;
-  background: url(../img/settings-header.png) no-repeat center/cover;
+  background: url(../img/header/settings-header.png) no-repeat center/100%;
 }
 
 header .header__nav .header__settings .settings__settings:after {
@@ -336,7 +336,7 @@ header .header__nav .header__settings .settings__upload {
   width: 22px;
   height: 20px;
   margin: 1.5em;
-  background: url(../img/upload-header.png) no-repeat center/cover;
+  background: url(../img/header/upload-header.png) no-repeat center/cover;
 }
 
 header .header__nav .header__settings .settings__upload:after {
@@ -354,7 +354,7 @@ header .header__nav .header__settings .settings__mail {
   width: 22px;
   height: 20px;
   margin: 1.5em;
-  background: url(../img/envelope-header.png) no-repeat center/100%;
+  background: url(../img/header/envelope-header.png) no-repeat center/100%;
 }
 
 header .header__nav .header__settings .settings__mail:after {
@@ -372,7 +372,7 @@ header .header__nav .header__settings .settings__earth {
   width: 22px;
   height: 20px;
   margin: 1.5em;
-  background: url(../img/earth-header.png) no-repeat center/cover;
+  background: url(../img/header/earth-header.png) no-repeat center/90%;
 }
 
 header .header__nav .header__settings .settings__earth:before {
@@ -406,7 +406,7 @@ header .header__nav .header__settings .header__profile .profile__foto {
   width: 70px;
   height: 70px;
   margin: 0 1em;
-  background: url(../img/foto_kendall.jpeg) no-repeat center/cover;
+  background: url(../img/header/foto_kendall.jpeg) no-repeat center/cover;
 }
 
 header .header__nav .header__settings .header__profile .profile__data .profile__name {
@@ -617,9 +617,9 @@ header .statistic-tab .conteiner-header .tab__daily .daily__add {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 40px;
-  height: 40px;
-  margin: 10px;
+  width: 20px;
+  height: 20px;
+  margin: 20px;
   cursor: pointer;
 }
 
@@ -627,13 +627,14 @@ header .statistic-tab .conteiner-header .tab__daily .daily__add {
   content: '';
   position: absolute;
   bottom: 5px;
-  left: 50px;
+  left: 40px;
   border: 10px solid transparent;
   border-left: 10px solid #EA6D54;
 }
 
 .left-sidebar .left-sidebar__nav .nav__main p {
-  margin: 5px;
+  position: absolute;
+  top: 20px;
   margin-top: 10px;
   margin-bottom: 20px;
   font-family: 'Lato', sans-serif;
@@ -644,6 +645,30 @@ header .statistic-tab .conteiner-header .tab__daily .daily__add {
 .left-sidebar .left-sidebar__nav .nav__main .power {
   margin-top: auto;
   margin-bottom: 20px;
+}
+
+.home {
+  background: url(../img/left-sidebar/home.png) no-repeat center/cover;
+}
+
+.stat {
+  background: url(../img/left-sidebar/statistics.png) no-repeat center/cover;
+}
+
+.users {
+  background: url(../img/left-sidebar/users.png) no-repeat center/cover;
+}
+
+.set {
+  background: url(../img/left-sidebar/settings.png) no-repeat center/cover;
+}
+
+.quires {
+  background: url(../img/left-sidebar/quires.png) no-repeat center/cover;
+}
+
+.power {
+  background: url(../img/left-sidebar/power-button.png) no-repeat center/cover;
 }
 
 .main__inner {
@@ -667,6 +692,8 @@ header .statistic-tab .conteiner-header .tab__daily .daily__add {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -675,6 +702,8 @@ header .statistic-tab .conteiner-header .tab__daily .daily__add {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -732,8 +761,8 @@ header .statistic-tab .conteiner-header .tab__daily .daily__add {
 
 .main__inner .main__container .container__progress .box__graph {
   width: 100%;
-  height: 140px;
-  background: url(../img/graph.png) no-repeat center/cover;
+  height: 200px;
+  background: url(../img/main/graph.png) no-repeat center/90%;
 }
 
 .main__inner .main__container .container__circle {
@@ -886,6 +915,7 @@ header .statistic-tab .conteiner-header .tab__daily .daily__add {
   -webkit-box-flex: 1.5;
       -ms-flex-positive: 1.5;
           flex-grow: 1.5;
+  width: 350px;
   margin: 9px;
   padding: 31px;
   background-color: white;
@@ -914,12 +944,16 @@ header .statistic-tab .conteiner-header .tab__daily .daily__add {
 }
 
 .main__inner .main__container .container__feed .feed__inner .feed__autor .woman {
+  position: relative;
   width: 43px;
   height: 43px;
   margin: 20px;
+  background: url(../img/main/sofi.png) no-repeat center/cover;
 }
 
 .main__inner .main__container .container__feed .feed__inner .feed__autor .woman p {
+  position: absolute;
+  top: 40px;
   margin-top: 10px;
   font-size: 8px;
   color: #979796;
@@ -927,12 +961,16 @@ header .statistic-tab .conteiner-header .tab__daily .daily__add {
 }
 
 .main__inner .main__container .container__feed .feed__inner .feed__autor .man {
+  position: relative;
   width: 43px;
   height: 43px;
   margin: 20px;
+  background: url(../img/main/peter.png) no-repeat center/cover;
 }
 
 .main__inner .main__container .container__feed .feed__inner .feed__autor .man p {
+  position: absolute;
+  top: 40px;
   margin-top: 10px;
   font-size: 8px;
   color: #979796;
@@ -997,8 +1035,8 @@ header .statistic-tab .conteiner-header .tab__daily .daily__add {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+      -ms-flex: 1 1 520px;
+          flex: 1 1 520px;
 }
 
 .main__inner .main__container .container__holder .holder__task {
@@ -1011,8 +1049,9 @@ header .statistic-tab .conteiner-header .tab__daily .daily__add {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -ms-flex-preferred-size: 500px;
-      flex-basis: 500px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 calc(100% - 20px);
+          flex: 1 0 calc(100% - 20px);
   margin: 9px;
   padding: 31px;
   background-color: white;
@@ -1104,8 +1143,9 @@ header .statistic-tab .conteiner-header .tab__daily .daily__add {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-preferred-size: 240px;
-      flex-basis: 240px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
   margin: 9px;
   padding: 31px;
   background-color: white;
@@ -1132,6 +1172,9 @@ header .statistic-tab .conteiner-header .tab__daily .daily__add {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 135px;
+  height: 90px;
+  background: url(../img/main/progress.png) no-repeat center/cover;
 }
 
 .main__inner .main__container .container__holder .holder__progress .progress__number {
@@ -1187,8 +1230,9 @@ header .statistic-tab .conteiner-header .tab__daily .daily__add {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-preferred-size: 240px;
-      flex-basis: 240px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
   margin: 9px;
   padding: 31px;
   background-color: white;
@@ -1208,6 +1252,7 @@ header .statistic-tab .conteiner-header .tab__daily .daily__add {
           align-items: center;
   width: 187px;
   height: 115px;
+  background: url(../img/main/shipment.png) no-repeat center/cover;
 }
 
 .main__inner .main__container .container__holder .holder__shipments .shipment__footer {
