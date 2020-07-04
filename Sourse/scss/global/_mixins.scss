@@ -8,6 +8,10 @@
     background: linear-gradient(0deg, #fd5272, #fb765a);
 }
 
+@mixin left-right-gradient {
+    background: linear-gradient(to right, #fd5272, #fb765a);
+}
+
 @mixin gradient-text {
     background: linear-gradient(0deg, #fd5272, #fb765a);
     mix-blend-mode: screen;
