@@ -667,6 +667,8 @@ header .statistic-tab .conteiner-header .tab__daily .daily__add {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .main__inner .main__container .container__progress {
@@ -680,7 +682,6 @@ header .statistic-tab .conteiner-header .tab__daily .daily__add {
   -webkit-box-flex: 2;
       -ms-flex-positive: 2;
           flex-grow: 2;
-  width: 100px;
   margin: 9px;
   padding: 31px;
   background-color: white;
@@ -752,7 +753,6 @@ header .statistic-tab .conteiner-header .tab__daily .daily__add {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  width: 100px;
   margin: 9px;
   padding: 31px;
   background-color: white;
@@ -883,10 +883,9 @@ header .statistic-tab .conteiner-header .tab__daily .daily__add {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  width: 100px;
+  -webkit-box-flex: 1.5;
+      -ms-flex-positive: 1.5;
+          flex-grow: 1.5;
   margin: 9px;
   padding: 31px;
   background-color: white;
@@ -1000,7 +999,6 @@ header .statistic-tab .conteiner-header .tab__daily .daily__add {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  width: 100px;
 }
 
 .main__inner .main__container .container__holder .holder__task {
@@ -1011,14 +1009,86 @@ header .statistic-tab .conteiner-header .tab__daily .daily__add {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -ms-flex-preferred-size: 500px;
       flex-basis: 500px;
-  width: 100px;
   margin: 9px;
   padding: 31px;
   background-color: white;
   -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
           box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.main__inner .main__container .container__holder .holder__task .task__radio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 1.3vw;
+}
+
+.main__inner .main__container .container__holder .holder__task .task__radio .radio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 0.2em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 440px;
+  padding: 14px;
+  border-top: #e7e7e7 1px solid;
+}
+
+.main__inner .main__container .container__holder .holder__task .task__radio .radio .radio:nth-child(4) {
+  border-top: #e7e7e7 1px solid;
+  border-bottom: #e7e7e7 1px solid;
+}
+
+.main__inner .main__container .container__holder .holder__task .task__radio .radio .custom-radio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-right: 10px;
+}
+
+.main__inner .main__container .container__holder .holder__task .task__radio .radio .custom-radio span {
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: 1em;
+  color: #fd566f;
+}
+
+.main__inner .main__container .container__holder .holder__task .task__radio .radio .radio__text {
+  font-size: 12px;
+  color: #bfbfbf;
+}
+
+.main__inner .main__container .container__holder .holder__task .task__radio .radio .radio__time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main__inner .main__container .container__holder .holder__task .task__radio .radio .radio__time .clock {
+  margin-right: 10px;
+  color: #bfbfbf;
+}
+
+.main__inner .main__container .container__holder .holder__task .task__radio .radio .radio__time .clock__time {
+  font-weight: bold;
+  font-size: 12px;
+  color: #9C9C9C;
 }
 
 .main__inner .main__container .container__holder .holder__progress {
@@ -1036,7 +1106,6 @@ header .statistic-tab .conteiner-header .tab__daily .daily__add {
           align-items: center;
   -ms-flex-preferred-size: 240px;
       flex-basis: 240px;
-  width: 100px;
   margin: 9px;
   padding: 31px;
   background-color: white;
@@ -1113,14 +1182,81 @@ header .statistic-tab .conteiner-header .tab__daily .daily__add {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-preferred-size: 240px;
       flex-basis: 240px;
-  width: 100px;
   margin: 9px;
   padding: 31px;
   background-color: white;
   -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
           box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.main__inner .main__container .container__holder .holder__shipments .shipment__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 187px;
+  height: 115px;
+}
+
+.main__inner .main__container .container__holder .holder__shipments .shipment__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main__inner .main__container .container__holder .holder__shipments .shipment__footer .shipment__number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 0 0.3em 0;
+  font-weight: bold;
+  font-size: calc(19px + 0.1vw);
+  color: #fd5272;
+}
+
+.main__inner .main__container .container__holder .holder__shipments .shipment__footer .box__stat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 14px;
+}
+
+.main__inner .main__container .container__holder .holder__shipments .shipment__footer .box__stat p {
+  margin: 0;
+  padding: 0.5em;
+  font-weight: bold;
+  font-size: calc(12px + 0.1vw);
+  color: #777;
+  padding: 0;
+}
+
+.main__inner .main__container .container__holder .holder__shipments .shipment__footer .box__stat .up {
+  color: #6c5bb6;
+}
+
+.main__inner .main__container .container__holder .holder__shipments .shipment__footer .box__stat .down {
+  color: #fd5272;
 }
 
 * {
