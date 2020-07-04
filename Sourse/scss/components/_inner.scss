@@ -7,11 +7,11 @@
     .main__container {
         display: flex;
         justify-content: space-around;
+        flex-wrap: wrap;
         .container__progress {
             display: flex;
             flex-direction: column;
             flex-grow: 2;
-            width: 100px;
             @include container; 
             .box__header {
                 display: flex;
@@ -51,7 +51,6 @@
             justify-content: center;
             align-items: center;
             flex-grow: 1;
-            width: 100px;
             @include container;
             .h4 {
                 @include title;
@@ -133,8 +132,7 @@
         .container__feed {
             display: flex;
             flex-direction: column;
-            flex-grow: 1;
-            width: 100px;
+            flex-grow: 1.5;
             @include container;
             .feed__inner {
                 display: flex;
@@ -200,22 +198,67 @@
             display: flex;
             flex-wrap: wrap;
             flex-grow: 1;
-            width: 100px;
             .holder__task {
                 display: flex;
                 flex-direction: column;
+                justify-content: space-around;
                 flex-basis: 500px;
-                width: 100px;
                 @include container;
+                .task__radio {
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 1.3vw;
+                    .radio {
+                        display: flex;
+                        margin-bottom: 0.2em;
+                        justify-content: space-between;
+                        align-items: center;
+                        max-width: 440px;
+                        padding: 14px;
+                        border-top: #e7e7e7 1px solid;
+                    .radio:nth-child(4) {
+                        border-top: #e7e7e7 1px solid;
+                        border-bottom: #e7e7e7 1px solid;
+                    }
+                        .custom-radio{
+                            display: flex;
+                            justify-content: space-between;
+                            margin-right: 10px;
+                            span {
+                                margin-left: 10px;
+                                font-weight: bold;
+                                font-size: 1em;
+                                color: #fd566f;
+                            }
+                        }
+                        .radio__text {
+                            font-size: 12px;
+                            color: #bfbfbf;
+                        }
+                        .radio__time {
+                            display: flex;
+                            .clock {
+                                margin-right: 10px;
+                                color: #bfbfbf;
 
+                            }
+                            .clock__time {
+                                font-weight: bold;
+                                font-size: 12px;
+                                color: #9C9C9C;
+                            }
+                        }
+                    }
+               }
             }
+
+
             .holder__progress {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-around;
                 align-items: center;
                 flex-basis: 240px;
-                width: 100px;
                 @include container;
                 .h4 {
                     @include title;
@@ -253,9 +296,44 @@
             .holder__shipments {
                 display: flex;
                 flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
                 flex-basis: 240px;
-                width: 100px;
                 @include container;
+                .shipment__img {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 187px;
+                    height: 115px;
+                }
+                .shipment__footer {
+                    display: flex;
+                    justify-content: space-between;
+                    .shipment__number {
+                        display: flex;
+                        justify-content: center;
+                        margin: 0 0 0.3em 0;
+                        font-weight: bold;
+                        font-size: calc(19px + 0.1vw);
+                        color: $gradient-pink;
+                    }
+                    .box__stat {
+                        display: flex;
+                        justify-content: center;
+                        font-size: 14px;
+                        p {
+                            @include daily-text;
+                            padding: 0;
+                        }
+                        .up {
+                            color: #6c5bb6;
+                        }
+                        .down {
+                            color: #fd5272;
+                        }
+                    }
+                }
             }
         }
     }
