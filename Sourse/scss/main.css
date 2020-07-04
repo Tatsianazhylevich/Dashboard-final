@@ -734,7 +734,7 @@ header .statistic-tab .conteiner-header .tab__daily .daily__add {
   font-size: calc(10px + 0.3vw);
   font-weight: bold;
   text-transform: capitalize;
-  color: #767676;
+  color: #777;
 }
 
 .main__inner .main__container .container__progress .box__header .box__list {
@@ -796,7 +796,7 @@ header .statistic-tab .conteiner-header .tab__daily .daily__add {
   font-size: calc(10px + 0.3vw);
   font-weight: bold;
   text-transform: capitalize;
-  color: #767676;
+  color: #777;
 }
 
 .main__inner .main__container .container__circle .box__img {
@@ -928,7 +928,7 @@ header .statistic-tab .conteiner-header .tab__daily .daily__add {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 35px;
+  margin-top: 15px;
 }
 
 .main__inner .main__container .container__feed .feed__inner .feed__autor {
@@ -1082,14 +1082,8 @@ header .statistic-tab .conteiner-header .tab__daily .daily__add {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 440px;
   padding: 14px;
   border-top: #e7e7e7 1px solid;
-}
-
-.main__inner .main__container .container__holder .holder__task .task__radio .radio .radio:nth-child(4) {
-  border-top: #e7e7e7 1px solid;
-  border-bottom: #e7e7e7 1px solid;
 }
 
 .main__inner .main__container .container__holder .holder__task .task__radio .radio .custom-radio {
@@ -1160,7 +1154,7 @@ header .statistic-tab .conteiner-header .tab__daily .daily__add {
   font-size: calc(10px + 0.3vw);
   font-weight: bold;
   text-transform: capitalize;
-  color: #767676;
+  color: #777;
 }
 
 .main__inner .main__container .container__holder .holder__progress .progress__img {
@@ -1425,7 +1419,7 @@ form {
   border-bottom: #f1f1f1 1px solid;
 }
 
-input {
+.input {
   width: 70%;
   height: 30px;
   margin: 5px;
@@ -1501,6 +1495,150 @@ button {
   background: url(../img/right-sidebar/ben.jpeg) no-repeat center/cover;
 }
 
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+.footer .footer__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 30px;
+}
+
+.footer .footer__icons .icons__rdio {
+  position: relative;
+  width: 55px;
+  height: 55px;
+  margin: 5px;
+  border-radius: 25%;
+  background: -webkit-gradient(linear, left top, right top, from(#6c5bb6), to(#ab68dd));
+  background: linear-gradient(to right, #6c5bb6, #ab68dd);
+}
+
+.footer .footer__icons .icons__rdio .rdio {
+  position: absolute;
+  top: 13px;
+  right: 10px;
+  width: 31px;
+  height: 25px;
+  background: url(../img/footer/rdio-logo.png) no-repeat center/100%;
+}
+
+.footer .footer__icons .icons__css {
+  position: relative;
+  width: 55px;
+  height: 55px;
+  margin: 5px;
+  border-radius: 25%;
+  background: -webkit-gradient(linear, left top, right top, from(#4cbec3), to(#51e2c4));
+  background: linear-gradient(to right, #4cbec3, #51e2c4);
+}
+
+.footer .footer__icons .icons__css .css {
+  position: absolute;
+  top: 13px;
+  right: 10px;
+  width: 31px;
+  height: 25px;
+  background: url(../img/footer/css-3-logo.png) no-repeat center/100%;
+}
+
+.footer .footer__icons .icons__deviantart {
+  position: relative;
+  width: 55px;
+  height: 55px;
+  margin: 5px;
+  border-radius: 25%;
+  background: -webkit-gradient(linear, left top, right top, from(#b8757c), to(#efb094));
+  background: linear-gradient(to right, #b8757c, #efb094);
+}
+
+.footer .footer__icons .icons__deviantart .deviantart {
+  position: absolute;
+  top: 13px;
+  right: 18px;
+  width: 20px;
+  height: 30px;
+  background: url(../img/footer/deviantart-logo.png) no-repeat center/90%;
+}
+
+.footer .footer__icons .icons__xing {
+  position: relative;
+  width: 55px;
+  height: 55px;
+  margin: 5px;
+  border-radius: 25%;
+  background: -webkit-gradient(linear, left top, right top, from(#854ab6), to(#7282e0));
+  background: linear-gradient(to right, #854ab6, #7282e0);
+}
+
+.footer .footer__icons .icons__xing .xing {
+  position: absolute;
+  top: 13px;
+  right: 10px;
+  width: 31px;
+  height: 25px;
+  background: url(../img/footer/xing-logo.png) no-repeat center/100%;
+}
+
+.footer .footer__icons .icons__vimeo {
+  position: relative;
+  width: 55px;
+  height: 55px;
+  margin: 5px;
+  border-radius: 25%;
+  background: -webkit-gradient(linear, left top, right top, from(#5091e6), to(#30c2df));
+  background: linear-gradient(to right, #5091e6, #30c2df);
+}
+
+.footer .footer__icons .icons__vimeo .vimeo {
+  position: absolute;
+  top: 15px;
+  right: 13px;
+  width: 31px;
+  height: 25px;
+  background: url(../img/footer/vimeo-logo.png) no-repeat center/100%;
+}
+
+.footer .footer__icons .icons__vk {
+  position: relative;
+  width: 55px;
+  height: 55px;
+  margin: 5px;
+  border-radius: 25%;
+  background: -webkit-gradient(linear, left top, right top, from(#f59383), to(#f59383));
+  background: linear-gradient(to right, #f59383, #f59383);
+}
+
+.footer .footer__icons .icons__vk .vk {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  width: 35px;
+  height: 25px;
+  background: url(../img/footer/vk-logo.png) no-repeat center/100%;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1542,5 +1680,14 @@ body .wrapper .container__inner main {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+h4 {
+  padding-top: 1vw;
+  margin: 0 0 1vw 0;
+  font-size: calc(10px + 0.3vw);
+  font-weight: bold;
+  text-transform: capitalize;
+  color: #777;
 }
 /*# sourceMappingURL=main.css.map */

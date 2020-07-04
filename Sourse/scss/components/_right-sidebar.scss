@@ -30,7 +30,7 @@
                 color: darken($color: $gradient-pink, $amount: 5)
             }
         }
-        // ===================================================ACCOUNT===================
+        // =========================================ACCOUNT=========================
         .users_account {
             display: flex;
             flex-direction: column;
@@ -79,7 +79,7 @@ form {
     padding: 15px 10px;
     border-bottom: #f1f1f1 1px solid;
 }
-input {
+.input {
     width: 70%;
     height: 30px;
     margin: 5px;

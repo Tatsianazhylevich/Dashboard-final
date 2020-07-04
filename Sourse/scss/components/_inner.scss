@@ -140,7 +140,7 @@
             @include container;
             .feed__inner {
                 display: flex;
-                margin-top: 35px;
+                margin-top: 15px;
                 .feed__autor {
                     display: flex;
                     flex-direction: column;
@@ -222,13 +222,8 @@
                         margin-bottom: 0.2em;
                         justify-content: space-between;
                         align-items: center;
-                        max-width: 440px;
                         padding: 14px;
                         border-top: #e7e7e7 1px solid;
-                    .radio:nth-child(4) {
-                        border-top: #e7e7e7 1px solid;
-                        border-bottom: #e7e7e7 1px solid;
-                    }
                         .custom-radio{
                             display: flex;
                             justify-content: space-between;

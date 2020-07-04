@@ -17,6 +17,62 @@
     mix-blend-mode: screen;
 }
 
+// =================MIXINS FOR SOCIAL===================================
+
+@mixin rdio {
+    position: relative;
+    width: 55px;
+    height: 55px;
+    margin: 5px;
+    border-radius: 25%;
+    background: linear-gradient(to right, $rdio-first, $rdio-secondary);
+}
+
+@mixin css {
+    position: relative;
+    width: 55px;
+    height: 55px;
+    margin: 5px;
+    border-radius: 25%;
+    background: linear-gradient(to right, $css3-first, $css3-secondary);
+}
+
+@mixin deviantart {
+    position: relative;
+    width: 55px;
+    height: 55px;
+    margin: 5px;
+    border-radius: 25%;
+    background: linear-gradient(to right, $deviantart-first, $deviantart-secondary);
+}
+
+@mixin xing {
+    position: relative;
+    width: 55px;
+    height: 55px;
+    margin: 5px;
+    border-radius: 25%;
+    background: linear-gradient(to right, $xing-first, $xing-secondary);
+}
+
+@mixin vimeo {
+    position: relative;
+    width: 55px;
+    height: 55px;
+    margin: 5px;
+    border-radius: 25%;
+    background: linear-gradient(to right,$vimeo-first, $vimeo-secondary);
+}
+
+@mixin vk {
+    position: relative;
+    width: 55px;
+    height: 55px;
+    margin: 5px;
+    border-radius: 25%;
+    background: linear-gradient(to right, $vk-first, $vk-secondary);
+}
+
 @mixin nav-text {
     margin-top: 10px;
     margin-bottom: 20px;
@@ -53,7 +109,7 @@
     font-size: calc(10px + 0.3vw);
     font-weight: bold;
     text-transform: capitalize;
-    color: $colortitle;
+    color: $colortext;
 }
 
 @mixin container {
