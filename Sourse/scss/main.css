@@ -319,7 +319,8 @@ header .header__nav .header__settings .settings__search .search__form button {
   background: none;
   border: none;
   position: absolute;
-  right: 0.1vw;
+  top: 1.5vw;
+  right: 1vw;
   cursor: pointer;
 }
 
