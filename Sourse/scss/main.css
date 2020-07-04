@@ -1304,6 +1304,80 @@ header .statistic-tab .conteiner-header .tab__daily .daily__add {
   color: #fd5272;
 }
 
+.main__right-sidebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 270px;
+          flex: 0 0 270px;
+  width: 270px;
+  height: 835px;
+  background-color: white;
+}
+
+.main__right-sidebar .right-sidebar__users {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main__right-sidebar .right-sidebar__users .users__panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 270px;
+  height: 48px;
+  background: -webkit-gradient(linear, left top, right top, from(#fd5272), to(#fb765a));
+  background: linear-gradient(to right, #fd5272, #fb765a);
+}
+
+.main__right-sidebar .right-sidebar__users .users__panel .panel__button {
+  position: relative;
+  width: 98px;
+  height: 48px;
+}
+
+.main__right-sidebar .right-sidebar__users .users__panel .panel__button:hover {
+  background-color: #fd395d;
+}
+
+.main__right-sidebar .right-sidebar__users .users__panel .panel__button:hover::after {
+  content: '\25BC';
+  position: absolute;
+  top: 45px;
+  left: 35px;
+  color: #fd395d;
+}
+
+.user {
+  width: 24px;
+  height: 20px;
+  margin: 14px 33px;
+  background: url(../img/right-sidebar/user.png) no-repeat center/cover;
+}
+
+.chat {
+  width: 24px;
+  height: 20px;
+  margin: 14px 33px;
+  background: url(../img/right-sidebar/chat.png) no-repeat center/90%;
+}
+
+.like {
+  width: 24px;
+  height: 20px;
+  margin: 14px 33px;
+  background: url(../img/right-sidebar/like.png) no-repeat center/90%;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1345,17 +1419,5 @@ body .wrapper .container__inner main {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-body .wrapper .container__inner main .main__right-sidebar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 270px;
-          flex: 0 0 270px;
-  width: 271px;
-  height: 835px;
-  background-color: tomato;
 }
 /*# sourceMappingURL=main.css.map */
