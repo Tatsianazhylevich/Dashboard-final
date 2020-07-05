@@ -784,9 +784,9 @@ header .statistic-tab .tab__add {
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+  -webkit-box-flex: 2;
+      -ms-flex: 2 1 auto;
+          flex: 2 1 auto;
   margin: 14px;
   background-color: #ececec;
 }
@@ -1441,6 +1441,22 @@ header .statistic-tab .tab__add {
   color: #fd5272;
 }
 
+.aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 270px;
+          flex: 1 1 270px;
+}
+
 .main__right-sidebar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1452,7 +1468,6 @@ header .statistic-tab .tab__add {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 270px;
           flex: 0 0 270px;
-  width: 270px;
   background-color: white;
 }
 
@@ -1470,10 +1485,12 @@ header .statistic-tab .tab__add {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 270px;
   height: 48px;
   background: -webkit-gradient(linear, left top, right top, from(#fd5272), to(#fb765a));
   background: linear-gradient(to right, #fd5272, #fb765a);
@@ -1652,8 +1669,8 @@ button {
       -ms-flex-direction: column;
           flex-direction: column;
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 auto;
-          flex: 1 0 auto;
+      -ms-flex: 1 0 270px;
+          flex: 1 0 270px;
 }
 
 .footer .footer__icons {
