@@ -414,6 +414,12 @@ header .header__nav .header__settings .header__profile .profile__data .profile__
   margin-bottom: 0;
   font-size: 1em;
   color: #fd5272;
+  display: inline-block;
+  background: -webkit-gradient(linear, left top, right top, from(#fd5272), to(#fb765a));
+  background: linear-gradient(to right, #fd5272, #fb765a);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 header .header__nav .header__settings .header__profile .profile__data .profile__profession {
@@ -487,6 +493,12 @@ header .statistic-tab .conteiner-header .tab__daily .daily__number {
   font-weight: bold;
   font-size: calc(19px + 0.1vw);
   color: #fd5272;
+  display: inline-block;
+  background: -webkit-gradient(linear, left top, right top, from(#fd5272), to(#fb765a));
+  background: linear-gradient(to right, #fd5272, #fb765a);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 header .statistic-tab .conteiner-header .tab__daily .daily_stat {
@@ -521,6 +533,12 @@ header .statistic-tab .conteiner-header .tab__daily .daily__add {
   font-weight: bold;
   font-size: calc(19px + 0.1vw);
   color: #fd5272;
+  display: inline-block;
+  background: -webkit-gradient(linear, left top, right top, from(#fd5272), to(#fb765a));
+  background: linear-gradient(to right, #fd5272, #fb765a);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
   padding-top: 1.5em;
 }
 
@@ -741,23 +759,43 @@ header .statistic-tab .conteiner-header .tab__daily .daily__add {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   list-style-type: none;
 }
 
 .main__inner .main__container .container__progress .box__header .box__list .box__item {
-  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40px;
+  height: 10px;
+  margin: 5px;
+}
+
+.main__inner .main__container .container__progress .box__header .box__list .box__item .item {
+  text-align: center;
   font-size: calc(10px + 0.2vw);
   font-weight: bold;
   color: #bfbfbf;
 }
 
-.main__inner .main__container .container__progress .box__header .box__list .box__item .box__item:hover {
-  padding: 10px;
-  font-size: calc(10px + 0.2vw);
-  font-weight: bold;
-  color: #bfbfbf;
+.main__inner .main__container .container__progress .box__header .box__list .box__item:hover {
+  width: 60px;
+  height: 30px;
+  border-radius: 20px;
   background: -webkit-gradient(linear, left bottom, left top, from(#fd5272), to(#fb765a));
   background: linear-gradient(0deg, #fd5272, #fb765a);
+}
+
+.main__inner .main__container .container__progress .box__header .box__list .box__item:hover .item:hover {
+  color: white;
 }
 
 .main__inner .main__container .container__progress .box__graph {
@@ -1101,6 +1139,12 @@ header .statistic-tab .conteiner-header .tab__daily .daily__add {
   font-weight: bold;
   font-size: 1em;
   color: #fd566f;
+  display: inline-block;
+  background: -webkit-gradient(linear, left top, right top, from(#fd5272), to(#fb765a));
+  background: linear-gradient(to right, #fd5272, #fb765a);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .main__inner .main__container .container__holder .holder__task .task__radio .radio .radio__text {
@@ -1183,6 +1227,12 @@ header .statistic-tab .conteiner-header .tab__daily .daily__add {
   font-weight: bold;
   font-size: calc(19px + 0.1vw);
   color: #8646b3;
+  display: inline-block;
+  background: -webkit-gradient(linear, left top, right top, from(#8646b3), to(#737fde));
+  background: linear-gradient(to right, #8646b3, #737fde);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .main__inner .main__container .container__holder .holder__progress .box__stat {
@@ -1269,7 +1319,12 @@ header .statistic-tab .conteiner-header .tab__daily .daily__add {
   margin: 0 0 0.3em 0;
   font-weight: bold;
   font-size: calc(19px + 0.1vw);
-  color: #fd5272;
+  display: inline-block;
+  background: -webkit-gradient(linear, left top, right top, from(#fd5272), to(#fb765a));
+  background: linear-gradient(to right, #fd5272, #fb765a);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .main__inner .main__container .container__holder .holder__shipments .shipment__footer .box__stat {

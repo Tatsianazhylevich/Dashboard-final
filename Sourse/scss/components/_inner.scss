@@ -24,19 +24,29 @@
                 }
                 .box__list {
                     display: flex;
+                    justify-content: space-around;
                     list-style-type: none;
                     .box__item {
-                        padding: 10px;
-                         font-size: calc(10px + 0.2vw);
-                        font-weight: bold;
-                        color: #bfbfbf;
-                        .box__item:hover {
-                            padding: 10px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 40px;
+                        height: 10px;
+                        margin: 5px;
+                        .item {
+                            text-align: center;
                             font-size: calc(10px + 0.2vw);
                             font-weight: bold;
-                            color: #bfbfbf; 
-                            @include orange-gradient;
-
+                            color: #bfbfbf;
+                        }
+                    }
+                    .box__item:hover {
+                        width: 60px;
+                        height: 30px;
+                        border-radius: 20px;
+                        @include orange-gradient;
+                        .item:hover {
+                            color: white;
                         }
                     }
                 }
@@ -94,6 +104,7 @@
                         circle:nth-child(2) {
                             stroke-dashoffset: -50;
                             stroke: #8646b3;
+
                         }
                     }
                     .number {
@@ -233,6 +244,7 @@
                                 font-weight: bold;
                                 font-size: 1em;
                                 color: #fd566f;
+                                @include gradient-title;
                             }
                         }
                         .radio__text {
@@ -282,6 +294,7 @@
                     font-weight: bold;
                     font-size: calc(19px + 0.1vw);
                     color: $gradient-violet;
+                    @include gradient-title-violet;
                 }
                 .box__stat {
                     display: flex;
@@ -326,7 +339,7 @@
                         margin: 0 0 0.3em 0;
                         font-weight: bold;
                         font-size: calc(19px + 0.1vw);
-                        color: $gradient-pink;
+                        @include gradient-title;
                     }
                     .box__stat {
                         display: flex;

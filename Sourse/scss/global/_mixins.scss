@@ -17,6 +17,22 @@
     mix-blend-mode: screen;
 }
 
+@mixin gradient-title {
+    display: inline-block;
+    background: linear-gradient(to right, #fd5272, #fb765a);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+@mixin gradient-title-violet {
+    display: inline-block;
+    background: linear-gradient(to right, #8646b3, #737fde);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
 // =================MIXINS FOR SOCIAL===================================
 
 @mixin rdio {
