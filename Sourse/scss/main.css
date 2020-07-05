@@ -303,13 +303,14 @@ header .header__nav .header__settings .settings__search .search__form {
 }
 
 header .header__nav .header__settings .settings__search .search__form input, header .header__nav .header__settings .settings__search .search__form button {
-  border-radius: 5%;
+  border-radius: 15px;
   border: 1px solid #cecece;
 }
 
 header .header__nav .header__settings .settings__search .search__form input {
   width: calc(100px + 10vw);
   height: calc(25px + 1vw);
+  padding-left: 15px;
   background: transparent;
 }
 
@@ -319,7 +320,7 @@ header .header__nav .header__settings .settings__search .search__form button {
   background: none;
   border: none;
   position: absolute;
-  top: 1.5vw;
+  top: 1vw;
   right: 1vw;
   cursor: pointer;
 }
