@@ -50,10 +50,10 @@ header {
                     width: 33px;
                     height: 18px;
                    @include orange-gradient;
-                    border-radius: 30%;
+                    border-radius: 15px;
                     .more__point {
                         position: absolute;
-                        top: 7px;
+                        top:6px;
                         left: 13px;
                         width: 5px;
                         height: 5px;
@@ -65,7 +65,7 @@ header {
                         content: '';
                         position: absolute;
                         top: 0;
-                        left: -7px;
+                        left: -7.5px;
                         width: 5px;
                         height: 5px;
                         margin: 0;

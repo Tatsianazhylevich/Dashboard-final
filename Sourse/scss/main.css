@@ -213,12 +213,12 @@ header .header__nav .header__settings .settings__more .more__background {
   height: 18px;
   background: -webkit-gradient(linear, left bottom, left top, from(#fd5272), to(#fb765a));
   background: linear-gradient(0deg, #fd5272, #fb765a);
-  border-radius: 30%;
+  border-radius: 15px;
 }
 
 header .header__nav .header__settings .settings__more .more__background .more__point {
   position: absolute;
-  top: 7px;
+  top: 6px;
   left: 13px;
   width: 5px;
   height: 5px;
@@ -231,7 +231,7 @@ header .header__nav .header__settings .settings__more .more__background .more__p
   content: '';
   position: absolute;
   top: 0;
-  left: -7px;
+  left: -7.5px;
   width: 5px;
   height: 5px;
   margin: 0;
