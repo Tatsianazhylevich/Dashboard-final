@@ -680,18 +680,22 @@ header .statistic-tab .tab__add {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: -webkit-gradient(linear, left bottom, left top, from(#fd5272), to(#fb765a));
-  background: linear-gradient(0deg, #fd5272, #fb765a);
+  background: white;
 }
 
 .left-sidebar .left-sidebar__logo p {
   padding: 0.4em 0.7em;
   font-family: 'Deftone Stylus', arial;
   font-size: calc(27px + 0.5vw);
+  font-weight: bold;
   text-transform: uppercase;
-  text-decoration: none;
   background: white;
-  mix-blend-mode: screen;
+  display: inline-block;
+  background: -webkit-gradient(linear, left top, right top, from(#fd5272), to(#fb765a));
+  background: linear-gradient(to right, #fd5272, #fb765a);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .left-sidebar .left-sidebar__logo:hover {
