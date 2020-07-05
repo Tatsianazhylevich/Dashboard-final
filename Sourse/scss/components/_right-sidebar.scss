@@ -1,17 +1,22 @@
+.aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1 1 270px;
+}
 .main__right-sidebar {
     display: flex;
     flex-direction: column;
     flex: 0 0 270px;
-    width: 270px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     .right-sidebar__users {
         display: flex;
         flex-direction: column;
         // =========================================PANEL============================
         .users__panel {
             display: flex;
+            justify-content: center;
             align-items: center;
-            width: 270px;
             height: 48px;
             @include left-right-gradient;
             .panel__button {
@@ -154,6 +159,5 @@ button {
 .ben {
     background: url(../img/right-sidebar/ben.jpeg) no-repeat center/ cover;
 }
-
 
 
