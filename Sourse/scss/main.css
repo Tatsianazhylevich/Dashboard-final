@@ -148,12 +148,24 @@ template, [hidden] {
   display: none;
 }
 
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 header .gamburger_menu {
   position: relative;
   display: none;
   width: 2em;
-  height: 0.2em;
-  margin: 10px;
+  height: 0.3em;
+  margin: 10px 10px 10px 20px;
   background: #fd5272;
 }
 
@@ -172,7 +184,7 @@ header .gamburger_menu::after {
   left: 0;
   right: 0;
   width: 2em;
-  height: 0.2em;
+  height: 0.3em;
   background: #fd5272;
 }
 
@@ -183,7 +195,7 @@ header .gamburger_menu::before {
   left: 0;
   right: 0;
   width: 2em;
-  height: 0.2em;
+  height: 0.3em;
   background: #fd5272;
 }
 
@@ -295,6 +307,12 @@ header .header__nav .header__settings .settings__settings {
   background: url(../img/header/settings-header.png) no-repeat center/100%;
 }
 
+@media (max-width: 768px) {
+  header .header__nav .header__settings .settings__settings {
+    display: none;
+  }
+}
+
 header .header__nav .header__settings .settings__settings:after {
   position: absolute;
   width: 100%;
@@ -329,6 +347,7 @@ header .header__nav .header__settings .settings__search .search__form input {
   width: calc(100px + 10vw);
   height: calc(25px + 1vw);
   padding-left: 15px;
+  font-size: calc(11px + 0.1vw);
   background: transparent;
 }
 
@@ -338,8 +357,8 @@ header .header__nav .header__settings .settings__search .search__form button {
   background: none;
   border: none;
   position: absolute;
-  top: 1vw;
-  right: 1vw;
+  top: 15px;
+  right: 15px;
   cursor: pointer;
 }
 
@@ -381,6 +400,12 @@ header .header__nav .header__settings .settings__mail {
   height: 20px;
   margin: 1.5em;
   background: url(../img/header/envelope-header.png) no-repeat center/100%;
+}
+
+@media (max-width: 768px) {
+  header .header__nav .header__settings .settings__mail {
+    display: none;
+  }
 }
 
 header .header__nav .header__settings .settings__mail:after {
@@ -475,7 +500,7 @@ header .header__nav .header__settings .header__profile .profile__more {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 10px;
+  margin: 0 20px;
 }
 
 header .header__nav .header__settings .header__profile .profile__more .more__point {
@@ -530,7 +555,7 @@ header .statistic-tab .conteiner-header {
       -ms-flex: 10 0 auto;
           flex: 10 0 auto;
   width: 150px;
-  margin: 15px;
+  margin: 10px 10px 10px 20px;
   background-color: white;
   border-top: whitesmoke;
   overflow-x: scroll;
