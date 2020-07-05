@@ -216,6 +216,7 @@ header {
                         margin-bottom: 0;
                         font-size: 1em;
                         color: #fd5272;
+                        @include gradient-title;
                     }
                     .profile__profession {
                         margin: 4px 0;
@@ -276,6 +277,7 @@ header {
                 }
                 .daily__number {
                     @include daily-number;
+                    @include gradient-title;
                 }
                 .daily_stat {
                     display: flex;
@@ -295,6 +297,7 @@ header {
     
                 .daily__add {
                     @include daily-number;
+                    @include gradient-title;
                     padding-top: 1.5em;
                 }
             }
