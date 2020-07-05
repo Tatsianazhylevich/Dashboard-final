@@ -1,35 +1,42 @@
 
 header {
+    // display: flex;
+    // justify-content: space-around;
+    // align-items: center;
+    // flex-direction: column;
     // @include header;
     .gamburger_menu {
         position: relative;
         display: none;
-        width: 2.5em;
-        height: 0.3em;
-        background: #fff;
+        width: 2em;
+        height: 0.2em;
+        margin: 10px;
+        background: $gradient-pink;
+        @include gamburger;
     }
     
     .gamburger_menu::after {
         content: '';
         position: absolute;
-        top: 0.50em;
+        top: 0.40em;
         left:0;
         right: 0;
-        width: 2.5em;
-        height: 0.3em;
-        background: #fff;
+        width: 2em;
+        height: 0.2em;
+        background: $gradient-pink;
     }
     
     .gamburger_menu::before {
         content: '';
         position: absolute;
-        top: -0.50em;
+        top: -0.40em;
         left:0;
         right: 0;
-        width: 2.5em;
-        height: 0.3em;
-        background: #fff;
+        width: 2em;
+        height: 0.2em;
+        background: $gradient-pink;
     }
+
     // =============================HEADER========================
     .header__nav {
         display: flex;
@@ -41,6 +48,7 @@ header {
             display: flex;
             justify-content: flex-start;
             align-items: center;
+
             //==================MORE=================================
             .settings__more {
                 padding: 1.5em;
@@ -88,6 +96,8 @@ header {
             // =================FOLDERS=====================
             .settings__folders {
                 @include header-settings;
+                @include none;
+                display: flex;
                 background: url(../img/header/folder-header.png) no-repeat center/ cover;
             }
             .settings__folders:after {
@@ -124,13 +134,13 @@ header {
                     width: auto;
                     margin: 0 auto;
                     input, button {
-                        border-radius: 5%;
+                        border-radius: 15px;
                         border: 1px solid #cecece;   
                     }
                     input {
                         width: calc(100px + 10vw);
                         height: calc(25px + 1vw);
-                        // padding-left: 15px;
+                        padding-left: 15px;
                         background: transparent; 
                     }
                     button {
@@ -139,7 +149,7 @@ header {
                         background: none;
                         border: none;
                         position: absolute;
-                        top: 1.5vw;
+                        top: 1vw;
                         right: 1vw;
                         cursor: pointer;
                     }
@@ -154,6 +164,7 @@ header {
             }
             .settings__upload {
                 @include header-settings;
+                @include none;
                 background: url(../img/header/upload-header.png) no-repeat center/ cover;
             }
             .settings__upload:after {
@@ -180,6 +191,7 @@ header {
 
             .settings__earth {
                 @include header-settings;
+                @include none;
                 background: url(../img/header/earth-header.png) no-repeat center/ 90%;
             }
             .settings__earth:before {
@@ -205,6 +217,8 @@ header {
             // ========================PROFILE=======================
             .header__profile {
                 display: flex;
+                justify-content: center;
+                align-items: center;
                 .profile__foto {
                     width: 70px;
                     height: 70px;
@@ -262,16 +276,29 @@ header {
 
 // ==========================STATISTIC-TAB===========================
     .statistic-tab {
-       
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       background-color: white;
+
         .conteiner-header{
-            @include sm;
             display: flex;
-            justify-content: space-around;
-            padding: 1.4em;
+            justify-content: space-between;
+            flex: 10 0 auto;
+            width: 150px;
+            margin: 15px;
             background-color: white;
             border-top: whitesmoke;
+            overflow-x: scroll;
+            overflow-y: auto;
             .tab__daily {
-               
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                width: 150px;
+                // flex: 0 0 100 ;
+                margin-right: 30px;
                 .daily__text {
                     @include daily-text;
                 }
@@ -293,14 +320,19 @@ header {
                     .down {
                         color: #fd5272;
                     }
-                }
-    
-                .daily__add {
-                    @include daily-number;
-                    @include gradient-title;
-                    padding-top: 1.5em;
-                }
+                }               
             }
+            
+        }
+        .tab__add {
+            display: flex;
+            flex: 1 0 auto ;
+            margin: 1.3em;
+            background-color: white;
+            border-top: whitesmoke;
+            @include daily-number;
+            @include gradient-title;
+            padding-top: 1.5em;
         }
     }
 }

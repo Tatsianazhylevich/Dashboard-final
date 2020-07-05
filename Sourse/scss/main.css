@@ -151,31 +151,40 @@ template, [hidden] {
 header .gamburger_menu {
   position: relative;
   display: none;
-  width: 2.5em;
-  height: 0.3em;
-  background: #fff;
+  width: 2em;
+  height: 0.2em;
+  margin: 10px;
+  background: #fd5272;
+}
+
+@media (max-width: 768px) {
+  header .gamburger_menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 header .gamburger_menu::after {
   content: '';
   position: absolute;
-  top: 0.50em;
+  top: 0.40em;
   left: 0;
   right: 0;
-  width: 2.5em;
-  height: 0.3em;
-  background: #fff;
+  width: 2em;
+  height: 0.2em;
+  background: #fd5272;
 }
 
 header .gamburger_menu::before {
   content: '';
   position: absolute;
-  top: -0.50em;
+  top: -0.40em;
   left: 0;
   right: 0;
-  width: 2.5em;
-  height: 0.3em;
-  background: #fff;
+  width: 2em;
+  height: 0.2em;
+  background: #fd5272;
 }
 
 header .header__nav {
@@ -256,7 +265,16 @@ header .header__nav .header__settings .settings__folders {
   width: 22px;
   height: 20px;
   margin: 1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background: url(../img/header/folder-header.png) no-repeat center/cover;
+}
+
+@media (max-width: 768px) {
+  header .header__nav .header__settings .settings__folders {
+    display: none;
+  }
 }
 
 header .header__nav .header__settings .settings__folders:after {
@@ -341,6 +359,12 @@ header .header__nav .header__settings .settings__upload {
   background: url(../img/header/upload-header.png) no-repeat center/cover;
 }
 
+@media (max-width: 768px) {
+  header .header__nav .header__settings .settings__upload {
+    display: none;
+  }
+}
+
 header .header__nav .header__settings .settings__upload:after {
   content: "";
   position: absolute;
@@ -377,6 +401,12 @@ header .header__nav .header__settings .settings__earth {
   background: url(../img/header/earth-header.png) no-repeat center/90%;
 }
 
+@media (max-width: 768px) {
+  header .header__nav .header__settings .settings__earth {
+    display: none;
+  }
+}
+
 header .header__nav .header__settings .settings__earth:before {
   content: "";
   position: absolute;
@@ -402,6 +432,12 @@ header .header__nav .header__settings .header__profile {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header .header__nav .header__settings .header__profile .profile__foto {
@@ -470,15 +506,53 @@ header .header__nav .header__settings .header__profile .profile__more .more__poi
   border-radius: 50%;
 }
 
+header .statistic-tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+}
+
 header .statistic-tab .conteiner-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding: 1.4em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 10;
+      -ms-flex: 10 0 auto;
+          flex: 10 0 auto;
+  width: 150px;
+  margin: 15px;
   background-color: white;
   border-top: whitesmoke;
+  overflow-x: scroll;
+  overflow-y: auto;
+}
+
+header .statistic-tab .conteiner-header .tab__daily {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 150px;
+  margin-right: 30px;
 }
 
 header .statistic-tab .conteiner-header .tab__daily .daily__text {
@@ -529,7 +603,16 @@ header .statistic-tab .conteiner-header .tab__daily .daily_stat .down {
   color: #fd5272;
 }
 
-header .statistic-tab .conteiner-header .tab__daily .daily__add {
+header .statistic-tab .tab__add {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  margin: 1.3em;
+  background-color: white;
+  border-top: whitesmoke;
   margin: 0 0 0.3em 0;
   font-weight: bold;
   font-size: calc(19px + 0.1vw);
@@ -699,6 +782,8 @@ header .statistic-tab .conteiner-header .tab__daily .daily__add {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
@@ -1087,8 +1172,9 @@ header .statistic-tab .conteiner-header .tab__daily .daily__add {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-flex: 1;
       -ms-flex: 1 0 calc(100% - 20px);
           flex: 1 0 calc(100% - 20px);
@@ -1736,6 +1822,24 @@ body .wrapper .container__inner main {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media (max-width: 590px) {
+  body .wrapper .container__inner main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 h4 {

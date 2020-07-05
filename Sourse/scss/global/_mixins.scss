@@ -89,6 +89,8 @@
     background: linear-gradient(to right, $vk-first, $vk-secondary);
 }
 
+// ==========================================================================
+
 @mixin nav-text {
     margin-top: 10px;
     margin-bottom: 20px;
@@ -151,60 +153,79 @@
     color: $colortext;
 }
 
-@mixin md {
-    @media (min-width: #{$screen-md-min}) {
-        @content;
+@mixin main {
+    @media (max-width : 590px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;        
     }
 }
 
-@mixin sm {
-    @media (min-width: #{$screen-sm-min}) {
-        @content;
+@mixin gamburger {
+    @media (max-width : 768px) {
+        display: flex;
     }
 }
 
-@mixin mid {
-    @media screen and (max-width: 768px) {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        width: 100vw;
-    }
-    @media  (max-width : 590px) {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        width: 100vw;
-    }
-    @media  (max-width : 380px) {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        width: 100vw;
-    }
 
+@mixin none {
+    @media (max-width : 768px) {
+        display: none;
+    }
 }
+
+@mixin scroll {
+    @media (max-width : 768px) {
+        
+    }
+}
+
+
+// @mixin md {
+//     @media (min-width: #{$screen-md-min}) {
+//         @content;
+//     }
+// }
+
+// @mixin sm {
+//     @media (min-width: #{$screen-sm-min}) {
+//         @content;
+//     }
+// }
+
+// @mixin mid {
+//     @media screen and (max-width: 768px) {
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: space-around;
+//         width: 100vw;
+//     }
+//     @media  (max-width : 590px) {
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: space-around;
+//         width: 100vw;
+//     }
+//     @media  (max-width : 380px) {
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: space-around;
+//         width: 100vw;
+//     }
+
+// }
 
 @mixin left-sidebar {
     @media (max-width: 768px) {
         display: none;  
     }
 }
-@mixin header {
-    @media (max-width: 768px) {
-        margin: 0;
-        .gamburger_menu {
-            display: flex;
-        }
-    }
-}
-
-
-
-// @mixin gradient-text ($size: 5px*4, $weight: 100*7, $angle: 45deg*6, $start: $gradient-pink, $end: $gradient-orange) {
-//     font-size: $size;
-//     font-weight: $weight;
-//     color: transparent;
-//     @include gradient($angle, $start, $end);
-//     -webkit-background-clip: text;
+// @mixin header {
+//     @media (max-width: 768px) {
+//         margin: 0;
+//         .gamburger_menu {
+//             display: flex;
+//         }
+//     }
 // }

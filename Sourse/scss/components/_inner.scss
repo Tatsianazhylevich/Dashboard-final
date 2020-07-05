@@ -1,6 +1,7 @@
 .main__inner {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     flex: 1 1 auto;
     margin: 14px;
     background-color: #ececec;
@@ -221,7 +222,7 @@
             .holder__task {
                 display: flex;
                 flex-direction: column;
-                justify-content: space-around;
+                justify-content: space-between;
                 flex: 1 0 calc(100% - 20px);
                 @include container;
                 .task__radio {
